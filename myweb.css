@@ -1,0 +1,19 @@
+h1 {
+    color:rgba(14, 1, 129, 0.979);
+    font-family:Microsoft YaHei;
+}
+
+h2 {
+    color:rgba(14, 1, 129, 0.979);
+    font-family:Microsoft YaHei;
+}
+
+p {
+    color:black;
+    margin-left:20px;
+    font-family:Microsoft YaHei;
+}
+
+body {
+    background-image:url("/img/eg_bg_06.gif");
+}
