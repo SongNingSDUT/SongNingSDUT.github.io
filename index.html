@@ -60,7 +60,7 @@ layout: default.html
 
         <div id="source">
             <h2>资源链接</h2>
-            <a style="margin-left:40px"; href="/pdf/geometry-first.pdf";>
+            <a class="mya"; href="/pdf/geometry-first.pdf";>
                 几何的公理化方法
             </a>
         </div>
@@ -71,7 +71,7 @@ layout: default.html
             <p>
                 {% for post in site.posts %}
                     {{ post.date|date_to_string }}
-                    <a href='{{ site.baseurl }}{{ post.url }}';>
+                    <a class="mya"; href='{{ site.baseurl }}{{ post.url }}';>
                         {{ post.title }}
                     </a>
                 {% endfor %}
