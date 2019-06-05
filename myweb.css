@@ -12,7 +12,11 @@ p {
     color:black;
     margin-left:20px;
     font-family:NSimSun;
-    font-size:16px
+    font-size:24px
+}
+
+a {
+    margin-left:20px;
 }
 
 body {
