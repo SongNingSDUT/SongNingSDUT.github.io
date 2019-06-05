@@ -5,8 +5,6 @@ layout: default.html
 
 # {{ page.title }}
 
-## LaTeX试卷模板
-
 ----------------------------------
 
 我按照山东理工大学数学与统计学院的Word试卷模板制作了一个实用的latex试卷模板：<a href="/others/latex/exam-SDUT/exam-SDUT.rar"> exam-SDUT </a>
