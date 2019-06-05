@@ -57,7 +57,9 @@ layout: default.html
 
         <h2>资源链接</h2>
         <a href="/pdf/geometry-first.pdf"; 
-            style="width:200px;text-align:left";>几何的公理化方法</a>
+            style="text-align:left;display:inline;margin-left:20px;";>
+            几何的公理化方法
+        </a>
 
         <h2>空间解析几何</h2>
         <p>本年度开设学期：2019-2020学年第一学期</p>
@@ -70,7 +72,7 @@ layout: default.html
             {% for post in site.posts %}
                 {{ post.date|date_to_string }}
                 <a href='{{ site.baseurl }}{{ post.url }}';
-                    style="width:200px;text-align:left";>
+                    style="text-align:left;display:inline";>
                     {{ post.title }}
                 </a>
             {% endfor %}
