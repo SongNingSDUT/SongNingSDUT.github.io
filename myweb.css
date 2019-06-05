@@ -1,17 +1,18 @@
 h1 {
     color:rgba(14, 1, 129, 0.979);
-    font-family:Microsoft YaHei;
+    font-family:NSimSun;
 }
 
 h2 {
     color:rgba(14, 1, 129, 0.979);
-    font-family:Microsoft YaHei;
+    font-family:NSimSun;
 }
 
 p {
     color:black;
     margin-left:20px;
-    font-family:Microsoft YaHei;
+    font-family:NSimSun;
+    font-size:16px
 }
 
 body {
