@@ -12,16 +12,18 @@ layout: default.html
     </head>
 
     <body background="/img/eg_bg_06.gif">
-        <h1 name="home">宋宁的数学世界</h1>
-        <p style="color:sienna;
-        font-family:KaiTi;margin-left:35px";>
-            我们必须知道，我们必将知道 —— 大卫·希尔伯特
-        </p>
+        <div id="home">
+            <h1>宋宁的数学世界</h1>
+            <p style="color:sienna;
+                font-family:KaiTi;margin-left:35px";>
+                我们必须知道，我们必将知道 —— 大卫·希尔伯特
+            </p>
+        </div>
         <hr />
 
         <ul>
             <li>
-                <a href="#home">我的主页</a>
+                <a href="index.html">我的主页</a>
             </li>
             
             <li>
@@ -45,40 +47,50 @@ layout: default.html
             </li>
 
         </ul>
-        
 
+        <div id="course">
+            <h2>我的课程</h2>    
+            <h3>空间解析几何</h3>
+            <p>本年度开设学期：2019-2020学年第一学期</p>
+            <p>教学对象：数学系本科大学一年级学生</p>
+            <p>补充习题</p>
+            <p>作业选讲</p>
+        </div>
+        <hr />
 
-        <h2 name="source">资源链接</h2>
-        <a href="/pdf/geometry-first.pdf";>
-            几何的公理化方法
-        </a>
+        <div id="source">
+            <h2>资源链接</h2>
+            <a href="/pdf/geometry-first.pdf";>
+                几何的公理化方法
+            </a>
+        </div>
+        <hr />
 
-        <h2 name="course">我的课程</h2>    
-        <h3>空间解析几何</h3>
-        <p>本年度开设学期：2019-2020学年第一学期</p>
-        <p>教学对象：数学系本科大学一年级学生</p>
-        <p>补充习题</p>
-        <p>作业选讲</p>
+        <div id="blog">
+            <h2 name="blog">我的博客</h2>
+            <p>
+                {% for post in site.posts %}
+                    {{ post.date|date_to_string }}
+                    <a href='{{ site.baseurl }}{{ post.url }}';>
+                        {{ post.title }}
+                    </a>
+                {% endfor %}
+            </p>
+        </div>
+        <hr />
 
-        <h2 name="blog">我的博客</h2>
-        <p>
-            {% for post in site.posts %}
-                {{ post.date|date_to_string }}
-                <a href='{{ site.baseurl }}{{ post.url }}';>
-                    {{ post.title }}
-                </a>
-            {% endfor %}
-        </p>
-
-        <h2 name="aboutme">自我介绍</h2>
-        <p>单位：山东理工大学·数学与统计学院·数学系</p>
-        <p>毕业院校：南开大学·组合数学中心</p>
-        <p>感兴趣的专业领域：图论、组合数学、初等几何和解析几何</p>
-        <p>讲授过的公共数学课程：高等数学、线性代数、概率论</p>
-        <p>讲授过的专业数学课程：空间解析几何、初等几何研究、数学教学论、数学史</p>
-
-        <h2 name="contact">联系方式</h2>
-        <p>E-mail：songning@sdut.edu.cn</p>
-        <p>新浪微博：蒜泥学数学</p>
+        <div id="aboutme">
+            <h2>自我介绍</h2>
+            <p>单位：山东理工大学·数学与统计学院·数学系</p>
+            <p>毕业院校：南开大学·组合数学中心</p>
+            <p>感兴趣的专业领域：图论、组合数学、初等几何和解析几何</p>
+            <p>讲授过的公共数学课程：高等数学、线性代数、概率论</p>
+            <p>讲授过的专业数学课程：空间解析几何、初等几何研究、数学教学论、数学史</p>
+        </div>
+        <div id="contact">
+            <h2>联系方式</h2>
+            <p>E-mail：songning@sdut.edu.cn</p>
+            <p>新浪微博：蒜泥学数学</p>
+        </div>
     </body>
 </html>
