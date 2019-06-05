@@ -8,21 +8,6 @@ layout: default.html
     <head>
         <meta charset="utf-8"> 
         <title>宋宁的数学世界</title>
-        <style>
-             a:link,a:visited{
-                display:block;
-                 width:120px;
-                font-weight:bold;
-                color:#FFFFFF;
-                background-color:#98bf21;
-                text-align:center;
-                padding:4px;
-                text-decoration:none;
-                text-transform:uppercase;}
-                
-            a:hover,a:active{
-                background-color:#7A991A;}
-        </style>
         <link rel="stylesheet" type="text/css" href="/myweb.css">
     </head>
 
@@ -32,27 +17,31 @@ layout: default.html
         font-family:KaiTi;margin-left:35px";>
             我们必须知道，我们必将知道 —— 大卫·希尔伯特
         </p>
-        
-        <ul style=
-            "list-style-type:none;
-            margin:0;
-            padding:0;
-            overflow:hidden";>
+        <hr />
 
-            <li style="float:left";>
-                <a href="#home">主页</a>
+        <ul>
+            <li>
+                <a href="#home">我的主页</a>
             </li>
             
-            <li style="float:left";>
-                <a href="#news">新闻</a>
+            <li>
+                <a href="#course">我的课程</a>
+            </li>
+
+            <li>
+                <a href="#source">我的资源</a>
             </li>
             
-            <li style="float:left";>
-                <a href="#contact">联系</a>
+            <li>
+                <a href="#source">我的博客</a>
             </li>
             
-            <li style="float:left";>
-                <a href="#about">关于</a>
+            <li>
+                <a href="#contact">联系方式</a>
+            </li>
+            
+            <li>
+                <a href="#aboutme">自我介绍</a>
             </li>
 
         </ul>
@@ -67,7 +56,8 @@ layout: default.html
         <p>新浪微博：蒜泥学数学</p>
 
         <h2>资源链接</h2>
-        <a href="/pdf/geometry-first.pdf">几何的公理化方法</a>
+        <a href="/pdf/geometry-first.pdf"; 
+            style="width:200px;text-align:left";>几何的公理化方法</a>
 
         <h2>空间解析几何</h2>
         <p>本年度开设学期：2019-2020学年第一学期</p>
@@ -78,7 +68,11 @@ layout: default.html
         <h2>我的博客</h2>
         <p>
             {% for post in site.posts %}
-            {{ post.date|date_to_string }} <a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
+                {{ post.date|date_to_string }}
+                <a href='{{ site.baseurl }}{{ post.url }}';
+                    style="width:200px;text-align:left";>
+                    {{ post.title }}
+                </a>
             {% endfor %}
         </p>
     </body>
