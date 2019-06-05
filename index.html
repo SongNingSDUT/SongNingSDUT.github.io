@@ -18,12 +18,30 @@ layout: default.html
             我们必须知道，我们必将知道 —— 大卫·希尔伯特
         </p>
         
-        <ul>
-            <li><a href="#home">主页</a></li>
-            <li><a href="#news">新闻</a></li>
-            <li><a href="#contact">联系</a></li>
-            <li><a href="#about">关于</a></li>
-        </ul>
+        <style>
+                ul{
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    overflow:hidden;}
+
+                li{
+                    float:left;}
+
+                a:link,a:visited{
+                    display:block;
+                    width:120px;
+                    font-weight:bold;
+                    color:#FFFFFF;
+                    background-color:#98bf21;
+                    text-align:center;
+                    padding:4px;
+                    text-decoration:none;
+                    text-transform:uppercase;}
+                
+                a:hover,a:active{
+                    background-color:#7A991A;}
+        </style>
 
         <h2>自我介绍</h2>
         <p>单位：山东理工大学·数学与统计学院·数学系</p>
