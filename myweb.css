@@ -10,9 +10,14 @@ h2 {
 
 p {
     color:black;
-	margin-left:40px;
-	margin-right:40px;
+	margin-left:30px;
+	margin-right:30px;
     font-family:Microsoft YaHei;
+}
+
+p.tip span {
+	font-weight:bold;
+	color:rgba(14, 1, 129, 0.979);
 }
 
 a.mya {
