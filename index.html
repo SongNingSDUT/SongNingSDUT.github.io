@@ -127,7 +127,7 @@ layout: default.html
             
             <p>
                 2.
-                <a class="mya"; href="/others/latex/exam-SDUT/examSDUT.rar";>
+                <a class="mya"; href="/others/latex/exam-SDUT/exam-SDUT.rar";>
                     LaTeX试卷模板
                 </a>
             </p>
@@ -138,10 +138,13 @@ layout: default.html
             <h2 name="blog">我的博客</h2>
             <p>
                 {% for post in site.posts %}
-                    {{ post.date|date_to_string }}
-                    <p> &radic <a class="mya"; href='{{ site.baseurl }}{{ post.url }}';>
-                        {{ post.title }}
-                    </a></p>
+                    <p>
+                        {{ post.date|date_to_string }}
+                        <a class="mya"; 
+                        href='{{ site.baseurl }}{{ post.url }}';>
+                            {{ post.title }}
+                        </a>
+                    </p>
                 {% endfor %}
             </p>
         </div>
