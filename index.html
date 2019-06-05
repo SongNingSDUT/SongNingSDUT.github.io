@@ -43,10 +43,6 @@ layout: default.html
             </li>
 
             <li>
-                <a href="#others">数学杂谈</a>
-            </li>
-
-            <li>
                 <a href="#source">资源链接</a>
             </li>
             
@@ -120,17 +116,6 @@ layout: default.html
         </div>
         <hr />
 
-        <div id="others">
-            <h2>数学杂谈</h2>
-            <p>
-                1.
-                <a class="mya"; href="/_posts/2019-6-5-examSDUT.md";>
-                    LaTeX试卷模板
-                </a>
-            </p>
-        </div>
-        <hr />
-
         <div id="source">
             <h2>资源链接</h2>
             <p>
@@ -138,7 +123,14 @@ layout: default.html
                 <a class="mya"; href="/pdf/elementary-euclidean-geometry.pdf";>
                     《初等欧氏几何》
                 </a>
-            </p>          
+            </p>  
+            
+            <p>
+                2.
+                <a class="mya"; href="/others/latex/exam-SDUT/examSDUT.rar";>
+                    LaTeX试卷模板
+                </a>
+            </p>
         </div>
         <hr />
 
@@ -147,9 +139,9 @@ layout: default.html
             <p>
                 {% for post in site.posts %}
                     {{ post.date|date_to_string }}
-                    <a class="mya"; href='{{ site.baseurl }}{{ post.url }}';>
+                    <p><a class="mya"; href='{{ site.baseurl }}{{ post.url }}';>
                         {{ post.title }}
-                    </a>
+                    </a></p>
                 {% endfor %}
             </p>
         </div>
