@@ -1,9 +1,4 @@
-h1 {
-    color:rgba(14, 1, 129, 0.979);
-    font-family:Microsoft YaHei;
-}
-
-h2 {
+h1,h2,h3 {
     color:rgba(14, 1, 129, 0.979);
     font-family:Microsoft YaHei;
 }
@@ -40,7 +35,7 @@ li a,
 li a:link,
 li a:visited {
 	display:block;
-	width:200px;
+	width:160px;
 	font-weight:bold;
 	color:#FFFFFF;
 	background-color:#98bf21;
