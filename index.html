@@ -19,7 +19,10 @@ layout: default.html
         </p>
         <hr />
 
-        <ul>
+        <ul style="	list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden";>
             <li>
                 <a href="#home">我的主页</a>
             </li>
@@ -56,8 +59,7 @@ layout: default.html
         <p>新浪微博：蒜泥学数学</p>
 
         <h2>资源链接</h2>
-        <a href="/pdf/geometry-first.pdf"; 
-            style="text-align:left;display:inline;margin-left:20px;";>
+        <a href="/pdf/geometry-first.pdf";>
             几何的公理化方法
         </a>
 
@@ -71,8 +73,7 @@ layout: default.html
         <p>
             {% for post in site.posts %}
                 {{ post.date|date_to_string }}
-                <a href='{{ site.baseurl }}{{ post.url }}';
-                    style="text-align:left;display:inline";>
+                <a href='{{ site.baseurl }}{{ post.url }}';>
                     {{ post.title }}
                 </a>
             {% endfor %}
