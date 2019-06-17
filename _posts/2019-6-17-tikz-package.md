@@ -19,6 +19,6 @@ layout: default.html
 ```
 
 画图效果
-![一条折线](https://github.com/SongNingSDUT/SongNingSDUT.github.io/blob/master/img/tikz-1-1.jpg)
+![一条折线](https://SongNingSDUT.github.io/img/tikz-1-1.jpg)
 
 {{ page.date|date_to_string }}
