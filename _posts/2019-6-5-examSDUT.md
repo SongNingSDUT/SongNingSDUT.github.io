@@ -14,4 +14,5 @@ layout: default.html
 我把所有命令都封装在这个文件中了，所以这个模板非常简洁，只有11个命令。这是使用说明：<a href="/others/latex/exam-SDUT/Readme.pdf">Readme</a>
 
 另外，建议使用texlive+texmaker实现编译。
-                
+
+{{ page.date|date_to_string }}
