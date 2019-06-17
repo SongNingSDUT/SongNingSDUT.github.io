@@ -18,7 +18,8 @@ layout: default.html
 \end{document}
 ```
 
-画图效果
-![一条折线](https://SongNingSDUT.github.io/img/tikz-1-1.jpg)
+画图效果如下：
+
+![一条折线](https://SongNingSDUT.github.io/img/tikz-1-1.jpg "一条折线")
 
 {{ page.date|date_to_string }}
