@@ -1,0 +1,64 @@
+h1,h2 {
+    color:rgba(14, 1, 129, 0.979);
+    font-family:Microsoft YaHei;
+}
+
+/*---------------*/
+
+h3 {
+	margin-left:25px;
+	color:rgba(14, 1, 129, 0.979);
+    font-family:Microsoft YaHei;
+}
+
+p {
+    color:black;
+	margin-left:40px;
+	margin-right:40px;
+    font-family:Microsoft YaHei;
+}
+
+p.tip span {
+	font-weight:bold;
+	color:rgba(14, 1, 129, 0.979);
+}
+
+a.mya {
+	margin-left:10px;
+    font-family:Microsoft YaHei;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+li {
+	float:left;
+}
+
+li a,
+li a:link,
+li a:visited {
+	display:block;
+	width:180px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#98bf21;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+li a:hover,
+li a:active {
+	background-color:#7A991A;
+}
+
+
+body {
+    background-image:url("/img/eg_bg_06.gif");
+}
