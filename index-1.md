@@ -1,7 +1,7 @@
 # <a name="top">宋宁的数学世界 </a>
 
 <p style="color:sienna;font-family:KaiTi;margin-left:35px;font-weight:bold;font-size:20px";>
-    我们必须知道，我们必将知道 —— 大卫·希尔伯特
+    我们必须知道，我们必将知道
 </p>
 
 ---
