@@ -23,7 +23,7 @@
 
 ### 第一讲 向量的线性运算 （教材1.1节~1.3节）</h3>
 
-1. <a href="/html/lecture/analysegeo/ch-01/Sec01-03.html">授课讲义</a>
+1. <a href="/html/lecture/analysegeo/ch-01/Sec01-03.pdf">授课讲义</a>
 2. 补充习题：暂缺
 3. 作业选解：暂缺
 
