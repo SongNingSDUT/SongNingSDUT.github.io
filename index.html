@@ -3,156 +3,350 @@ title: 宋宁的数学世界
 layout: default.html
 ---
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" 
-            content="width=device-width,
-                initial-scale=1.0,
-                maximum-scale=1.0, 
-                user-scalable=no">
-        <title>宋宁的数学世界</title>
-        <link rel="stylesheet" type="text/css" href="/myweb.css">
+
+<!DOCTYPE html><html><head>
+      <title>index-1</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:\Users\Ning Song\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.4.2\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
     </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="a-nametop%E5%AE%8B%E5%AE%81%E7%9A%84%E6%95%B0%E5%AD%A6%E4%B8%96%E7%95%8C-a"><a name="top" href>&#x5B8B;&#x5B81;&#x7684;&#x6570;&#x5B66;&#x4E16;&#x754C; </a></h1>
 
-    <body background="/img/eg_bg_06.gif">
- 
-        <div id="home">
-            <h1>宋宁的数学世界</h1>
-            <p style="color:sienna;
-                font-family:KaiTi;margin-left:35px;
-                font-weight:bold;
-                font-size:20px";>
-                我们必须知道，我们必将知道 —— 大卫·希尔伯特
-            </p>
-        </div>
-        <hr />
+<p style="color:sienna;font-family:KaiTi;margin-left:35px&#xFF1B;font-weight:bold;font-size:20px" ;>
+    &#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x77E5;&#x9053;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x5C06;&#x77E5;&#x9053; &#x2014;&#x2014; &#x5927;&#x536B;&#xB7;&#x5E0C;&#x5C14;&#x4F2F;&#x7279;
+</p>
+<hr>
+<h2 class="mume-header" id="%E7%9B%AE%E5%BD%95">&#x76EE;&#x5F55;</h2>
 
-        <ul>
-            <li>
-                <a href="index.html">我的主页</a>
-            </li>
+<ul>
+<li><a href="#top"> &#x6211;&#x7684;&#x4E3B;&#x9875; </a></li>
+<li><a href="#aboutme"> &#x81EA;&#x6211;&#x4ECB;&#x7ECD; </a></li>
+<li><a href="#lecture"> &#x6211;&#x7684;&#x8BFE;&#x7A0B;</a></li>
+<li><a href="#source"> &#x8D44;&#x6E90;&#x94FE;&#x63A5;</a></li>
+<li><a href="#blog"> &#x6211;&#x7684;&#x535A;&#x5BA2;</a></li>
+<li><a href="#contact"> &#x8054;&#x7CFB;&#x65B9;&#x5F0F;</a></li>
+</ul>
+<hr>
+<h2 class="mume-header" id="a-nameaboutme-%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D-a"><a name="aboutme" href> &#x81EA;&#x6211;&#x4ECB;&#x7ECD; </a></h2>
 
-            <li>
-                <a href="#aboutme">自我介绍</a>
-            </li>    
+<p><strong>&#x5355;&#x4F4D;</strong>&#xFF1A;<em>&#x5C71;&#x4E1C;&#x7406;&#x5DE5;&#x5927;&#x5B66;&#xB7;&#x6570;&#x5B66;&#x4E0E;&#x7EDF;&#x8BA1;&#x5B66;&#x9662;&#xB7;&#x6570;&#x5B66;&#x7CFB;</em></p>
+<p><strong>&#x6BD5;&#x4E1A;&#x9662;&#x6821;</strong>&#xFF1A;<em>&#x5357;&#x5F00;&#x5927;&#x5B66;&#xB7;&#x7EC4;&#x5408;&#x6570;&#x5B66;&#x4E2D;&#x5FC3;</em></p>
+<p><strong>&#x611F;&#x5174;&#x8DA3;&#x7684;&#x4E13;&#x4E1A;&#x9886;&#x57DF;</strong>&#xFF1A;<em>&#x56FE;&#x8BBA;&#x3001;&#x7EC4;&#x5408;&#x6570;&#x5B66;&#x3001;&#x521D;&#x7B49;&#x51E0;&#x4F55;&#x548C;&#x89E3;&#x6790;&#x51E0;&#x4F55;</em></p>
+<p><strong>&#x8BB2;&#x6388;&#x8FC7;&#x7684;&#x516C;&#x5171;&#x6570;&#x5B66;&#x8BFE;&#x7A0B;</strong>&#xFF1A;<em>&#x9AD8;&#x7B49;&#x6570;&#x5B66;&#x3001;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x3001;&#x6982;&#x7387;&#x8BBA;</em></p>
+<p><strong>&#x8BB2;&#x6388;&#x8FC7;&#x7684;&#x4E13;&#x4E1A;&#x6570;&#x5B66;&#x8BFE;&#x7A0B;</strong>&#xFF1A;<em>&#x7A7A;&#x95F4;&#x89E3;&#x6790;&#x51E0;&#x4F55;&#x3001;&#x521D;&#x7B49;&#x51E0;&#x4F55;&#x7814;&#x7A76;&#x3001;&#x6570;&#x5B66;&#x6559;&#x5B66;&#x8BBA;&#x3001;&#x6570;&#x5B66;&#x53F2;</em></p>
+<hr>
+<h2 class="mume-header" id="a-namelecture-%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8Ba"><a name="lecture" href> &#x6211;&#x7684;&#x8BFE;&#x7A0B;</a></h2>
 
-            <li>
-                <a href="#lecture">我的课程</a>
-            </li>
+<ol>
+<li>
+<p><a href="html\lecture\analysegeo.html">&#x7A7A;&#x95F4;&#x89E3;&#x6790;&#x51E0;&#x4F55;</a></p>
+</li>
+<li>
+<p><a href="html\lecture\basicgeo.html">&#x521D;&#x7B49;&#x51E0;&#x4F55;&#x7814;&#x7A76;</a></p>
+</li>
+<li>
+<p><a href="html\lecture\mathtech.html">&#x6570;&#x5B66;&#x6559;&#x5B66;&#x8BBA;</a></p>
+</li>
+</ol>
+<hr>
+<h2 class="mume-header" id="a-namesource-%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5a"><a name="source" href> &#x8D44;&#x6E90;&#x94FE;&#x63A5;</a></h2>
 
-            <li>
-                <a href="#source">资源链接</a>
-            </li>
-            
-            <li>
-                <a href="#blog">我的博客</a>
-            </li>
-            
-            <li>
-                <a href="#contact">联系方式</a>
-            </li>
+<ol>
+<li><a href="pdf\elementary-euclidean-geometry.pdf">&#x300A;&#x521D;&#x7B49;&#x6B27;&#x6C0F;&#x51E0;&#x4F55;&#x300B;</a></li>
+<li><a href="others\latex\exam-SDUT\exam-SDUT.rar"> LaTeX&#x8BD5;&#x5377;&#x6A21;&#x677F;</a></li><a href="others\latex\exam-SDUT\exam-SDUT.rar">
+</a><li><a href="others\latex\exam-SDUT\exam-SDUT.rar"></a><a href="pdf\geometry-linear-alg.pdf">&#x89E3;&#x6790;&#x51E0;&#x4F55;&#x8865;&#x5145;&#x6750;&#x6599;&#xFF1A;&#x77E9;&#x9635;&#x548C;&#x884C;&#x5217;&#x5F0F;</a></li><a href="pdf\geometry-linear-alg.pdf">
+</a><li><a href="pdf\geometry-linear-alg.pdf"></a><a href="html\ggb.html"> GeoGebra&#x4F5C;&#x54C1;</a></li>
+</ol>
+<hr>
+<h2 class="mume-header" id="a-nameblog-%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2a"><a name="blog" href> &#x6211;&#x7684;&#x535A;&#x5BA2;</a></h2>
 
-        </ul>
-        <hr />
+<p>
+  {% for post in site.posts %}
+  <p>
+    {{ post.date|date_to_string }}
+    <a href='{{ site.baseurl }}{{ post.url }}'>
+    {{ post.title }}
+    </a>
+  </p>
+  {% endfor %}
+</p>
 
-        <div id="aboutme">
-            <h2>自我介绍</h2>
-            <p class="tip">
-                <span>单位：</span>
-                山东理工大学·数学与统计学院·数学系
-            </p>
-            <p class="tip">
-                <span>毕业院校：</span>南开大学·组合数学中心
-            </p>
-            <p class="tip">
-                <span>感兴趣的专业领域：</span>图论、组合数学、初等几何和解析几何
-            </p>
-            <p class="tip">
-                <span>讲授过的公共数学课程：</span>高等数学、线性代数、概率论
-            </p>
-            <p class="tip">
-                <span>讲授过的专业数学课程：</span>空间解析几何、初等几何研究、数学教学论、数学史
-            </p>
-        </div>
-        <hr />
 
-        <div id="lecture">
-            <h2>我的课程</h2>
-            <p>
-                1.
-                <a class="mya"; href="/html/lecture/analysegeo.html";>
-                    空间解析几何
-                </a>
-            </p>
-            <p>
-                2.
-                <a class="mya"; href="/html/lecture/basicgeo.html";>
-                    初等几何研究
-                </a>
-            </p>
-            <p>
-                3.
-                <a class="mya"; href="/html/lecture/mathtech.html";>
-                    数学教学论
-                </a>
-            </p>  
-        </div>
-        <hr />
-        
-        <div id="source">
-            <h2>资源链接</h2>
-            <p>
-                1.
-                <a class="mya"; href="/pdf/elementary-euclidean-geometry.pdf";>
-                    《初等欧氏几何》
-                </a>
-            </p>  
-            
-            <p>
-                2.
-                <a class="mya"; href="/others/latex/exam-SDUT/exam-SDUT.rar";>
-                    LaTeX试卷模板
-                </a>
-            </p>
+<hr>
+<h2 class="mume-header" id="a-namecontact-%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8Fa"><a name="contact" href> &#x8054;&#x7CFB;&#x65B9;&#x5F0F;</a></h2>
 
-            <p>
-                3.
-                <a class="mya"; href="/pdf/geometry-linear-alg.pdf";>
-                    解析几何补充材料：矩阵和行列式
-                </a>
-            </p>
+<p><strong>E-mail</strong>&#xFF1A;<em><a href="mailto:songning@sdut.edu.cn">songning@sdut.edu.cn</a></em></p>
+<p><strong>&#x65B0;&#x6D6A;&#x5FAE;&#x535A;</strong>&#xFF1A;<em>&#x849C;&#x6CE5;&#x5B66;&#x6570;&#x5B66;</em></p>
+<hr>
 
-            <p>
-                4.
-                <a class="mya"; href="/html/ggb.html";>
-                    GeoGebra作品
-                </a>
-            </p> 
-        </div>
-        <hr />
-
-        <div id="blog">
-            <h2 name="blog">我的博客</h2>
-            <p>
-                {% for post in site.posts %}
-                    <p>
-                        {{ post.date|date_to_string }}
-                        <a class="mya"; 
-                        href='{{ site.baseurl }}{{ post.url }}';>
-                            {{ post.title }}
-                        </a>
-                    </p>
-                {% endfor %}
-            </p>
-        </div>
-        <hr />
-
-        <div id="contact">
-            <h2>联系方式</h2>
-            <p>E-mail：songning@sdut.edu.cn</p>
-            <p>新浪微博：蒜泥学数学</p>
-        </div>
-    </body>
-</html>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
