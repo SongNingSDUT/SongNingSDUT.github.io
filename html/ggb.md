@@ -37,6 +37,8 @@
 1. <a href="/html/ggb/taylor.html"> 泰勒公式演示</a>
 2. <a href="/html/ggb/riemann.html"> 黎曼和演示</a>
 3. <a href="/html/ggb/derivation.html"> 右导数演示</a>
+4. <a href="/html/ggb/zhongzhi.html"> 微分中值定理演示</a>
+
 
 ---
 
