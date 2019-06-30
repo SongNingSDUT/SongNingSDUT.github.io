@@ -30,6 +30,7 @@
 
 1. <a href="/html/ggb/baixian.html"> 摆线演示</a>
 2. <a href="/html/ggb/sqrt.html"> 我怎么就变方了？</a>
+3. <a href="/html/ggb/huakuai.html"> 曲柄滑块（圆的参数方程）</a>
 
 ---
 
