@@ -29,6 +29,7 @@
 ## <a name="analysegeo"> 解析几何 </a>
 
 1. <a href="/html/ggb/baixian.html"> 摆线演示</a>
+2. <a href="/html/ggb/sqrt.html"> 我怎么就变方了？</a>
 
 ---
 
