@@ -6,7 +6,7 @@
 
 ---
 <center>
-<iframe scrolling="no" title="曲柄滑块演示" src="https://www.geogebra.org/material/iframe/id/zvksc3qb/width/505/height/244/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="505px" height="244px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="曲柄滑块演示" src="https://www.geogebra.org/material/iframe/id/jex2azbd/width/505/height/244/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="505px" height="244px" style="border:0px;"> </iframe>
 </center>
 
 ---
