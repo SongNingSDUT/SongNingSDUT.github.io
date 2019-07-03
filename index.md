@@ -4,16 +4,16 @@
     我们必须知道，我们必将知道
 </p>
 
----
-
-## 目录
-+ <a href="#top"> 我的主页 </a>
-+ <a href="#aboutme"> 自我介绍 </a>
-+ <a href="#lecture"> 我的课程</a>
-+ <a href="#source"> 资源链接</a>
-+ <a href="#contact"> 联系方式</a>
-
----
+<table border="0">
+<tr>
+<td><a href="#top"> 我的主页 </a></td>
+<td> <a href="#aboutme"> 自我介绍 </a></td>
+<td><a href="#lecture"> 我的课程</a></td>
+<td><a href="#note"> 我的笔记</a></td>
+<td><a href="#source"> 资源链接</a></td>
+<td><a href="#contact"> 联系方式</a></td>
+</tr>
+</table>
 
 ## <a name="aboutme"> 自我介绍 </a>
 
@@ -38,7 +38,12 @@
 1. <a href="/html/lecture/analysegeo.html">空间解析几何</a>
 2. <a href="/html/lecture/basicgeo.html">初等几何研究</a>
 3. <a href="/html/lecture/mathtech.html">数学教学论</a>
-4. <a href="/html/K23note.html">测试</a>
+
+---
+
+## <a name="note"> 我的笔记 </a>
+
+1. 缺
 
 ---
 
