@@ -4,12 +4,12 @@
 
 ## 目  录
 
-+ <a href="/html/lecture/mathTeacher.html"> 返回《数学教学论》 </a>
 + <a href="#1"> 一、考试目标 </a>
 + <a href="#2"> 二、考试内容模块与要求 </a>
 + <a href="#3"> 三、试卷结构</a>
 + <a href="#4"> 四、线性相关</a>
 + <a href="#5"> 五、小结</a>
++ <a href="/html/lecture/mathTeacher.html"> 返回《数学教学论》 </a>
 
 ---
 
@@ -151,3 +151,5 @@
 ###6．教学设计题  
 请你创设一个引入“负数的概念”的问题情境，并完成本节课引入的教学设计。
 
+---
+<a href="/html/lecture/mathTeacher.html"> 返回《数学教学论》 </a>
