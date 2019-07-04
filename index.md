@@ -37,7 +37,7 @@
 
 1. <a href="/html/lecture/analysegeo.html">空间解析几何</a>
 2. <a href="/html/lecture/basicgeo.html">初等几何研究</a>
-3. <a href="/html/lecture/mathtech.html">数学教学论</a>
+3. <a href="/html/lecture/mathTecher.html">数学教学论</a>
 
 ---
 
