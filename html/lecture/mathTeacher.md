@@ -7,9 +7,10 @@
 ---
 
 ## 目录
-+ <a href="/index.html"> 我的主页 </a>
+
 + <a href="#zige">教师资格考试</a>
 + <a href="#ch-01">第一讲 暂缺</a>
++ <a href="/index.html"> 返回我的主页 </a>
 
 ---
 
@@ -24,3 +25,5 @@
 ## <a name="ch-01"> 第一讲 暂缺 </a>
 
 ---
+
+<a href="/index.html"> 返回我的主页 </a>
