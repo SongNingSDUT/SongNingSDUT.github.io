@@ -17,8 +17,8 @@
 ## <a name="zige"> 教师资格考试 </a>
 
 1. 《数学学科知识与教学能力》（初级中学）考试大纲：<a href="/html/lecture/mathTeacher/chuzhong-exam.html">链接</a>
-2. 《数学学科知识与教学能力》（高级中学）考试大纲：<a href="/html/lecture/mathTeacher/chuzhong-exam.html">链接（暂缺）</a>
-3. 《数学学科知识与教学能力》（高级中学）2019年上半年考试真题：<a href="/html/lecture/mathTeacher/chuzhong-exam.html">试卷（暂缺）</a> <a href="/html/lecture/mathTeacher/chuzhong-exam.html">答案（暂缺）</a>
+2. 《数学学科知识与教学能力》（高级中学）考试大纲：<a href="/html/lecture/mathTeacher/gaozhong-exam.html">链接</a>
+3. 《数学学科知识与教学能力》（高级中学）2019年上半年考试真题：<a href="/html/lecture/mathTeacher/gaozhong-exam.html">试卷（暂缺）</a> <a href="/html/lecture/mathTeacher/chuzhong-exam.html">答案（暂缺）</a>
 
 ---
 
