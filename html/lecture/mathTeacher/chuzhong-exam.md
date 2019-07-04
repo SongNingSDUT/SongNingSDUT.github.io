@@ -4,7 +4,7 @@
 
 ## 目  录
 
-+ <a href="/index.html"> 返回《数学教学论》 </a>
++ <a href="/html/lecture/mathTeacher.html"> 返回《数学教学论》 </a>
 + <a href="#1"> 一、考试目标 </a>
 + <a href="#2"> 二、考试内容模块与要求 </a>
 + <a href="#3"> 三、试卷结构</a>
