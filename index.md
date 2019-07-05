@@ -1,4 +1,4 @@
-# <a name="top">宋宁的数学世界 </a>
+# 宋宁的数学世界 
 
 <p style="color:sienna;font-family:KaiTi;margin-left:35px;font-weight:bold;font-size:20px";>
     我们必须知道，我们必将知道
@@ -6,10 +6,10 @@
 
 <table border="0">
 <tr>
-<td><a href="#top"> 我的主页 </a></td>
-<td> <a href="#aboutme"> 自我介绍 </a></td>
+<td><a href="#aboutme"> 自我介绍 </a></td>
 <td><a href="#lecture"> 我的课程</a></td>
 <td><a href="#note"> 我的笔记</a></td>
+<td><a href="#peixun"> 培训项目</a></td>
 <td><a href="#source"> 资源链接</a></td>
 <td><a href="#contact"> 联系方式</a></td>
 </tr>
@@ -47,6 +47,12 @@
 
 ---
 
+## <a name="peixun"> 培训项目 </a>
+
+1. 2019年暑期国培（缺）
+
+---
+
 ## <a name="source"> 资源链接</a>
 
 1. <a href="/pdf/elementary-euclidean-geometry.pdf">《初等欧氏几何》</a>
@@ -59,7 +65,6 @@
 ## <a name="contact"> 联系方式</a>
 
 **E-mail**：*songning@sdut.edu.cn*
-
 **新浪微博**：蒜泥学数学
 
 ---
