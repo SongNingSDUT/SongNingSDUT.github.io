@@ -35,15 +35,22 @@
 
 ## <a name="lecture"> 我的课程</a>
 
-1. <a href="/html/lecture/analysegeo.html">空间解析几何</a>
-2. <a href="/html/lecture/basicgeo.html">初等几何研究</a>
-3. <a href="/html/lecture/mathTeacher.html">数学教学论</a>
+1. 空间解析几何：<a href="/html/lecture/analysegeo.html">链接</a>
+2. 初等几何研究：<a href="/html/lecture/basicgeo.html">链接</a>
+3. 数学教学论：<a href="/html/lecture/mathTeacher.html">链接</a>
 
 ---
 
 ## <a name="note"> 我的笔记 </a>
 
-1. 缺
+1. 图论相关: <a href="/html/notes/graph-theory/graph-theory.html">链接</a>
+2. 代数相关: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
+3. 几何相关: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
+4. 线性代数: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
+5. 数学分析: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
+6. 概率论: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
+4. 初等数学相关: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
+5. LaTeX相关: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
 
 ---
 
@@ -55,16 +62,16 @@
 
 ## <a name="source"> 资源链接</a>
 
-1. <a href="/pdf/elementary-euclidean-geometry.pdf">《初等欧氏几何》</a>
-2. <a href="/others/latex/exam-SDUT/exam-SDUT.rar"> LaTeX试卷模板
-3. <a href="/pdf/geometry-linear-alg.pdf">解析几何补充材料：矩阵和行列式
-4. <a href="/html/ggb.html"> GeoGebra作品</a>
+1. 初等欧氏几何：<a href="/pdf/elementary-euclidean-geometry.pdf">下载</a>
+2. LaTeX试卷模板：<a href="/others/latex/exam-SDUT/exam-SDUT.rar">下载</a>
+3. 解析几何补充材料（矩阵和行列式）：<a href="/pdf/geometry-linear-alg.pdf">下载</a>
+4. GeoGebra作品：<a href="/html/ggb.html">下载</a>
 
 ---
 
 ## <a name="contact"> 联系方式</a>
 
-**E-mail**：*songning@sdut.edu.cn*
-**新浪微博**：蒜泥学数学
+**QQ**：保密 | **联系电话**：保密 | **E-mail**：*songning@sdut.edu.cn* | **新浪微博**：蒜泥学数学（<a href="https://weibo.com/mathsofsunny?is_all=1">链接</a>）
+山东理工大学官网：<a href="http://www.sdut.edu.cn">链接</a> | 山东理工大学·数学与统计学院：<a href="https://sci.sdut.edu.cn">链接</a>
 
 ---
