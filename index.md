@@ -67,7 +67,10 @@
 
 ## <a name="contact"> 联系方式</a>
 
-**QQ**：保密 | **联系电话**：保密 | **E-mail**：*songning@sdut.edu.cn* | **新浪微博**：蒜泥学数学（<a href="https://weibo.com/mathsofsunny?is_all=1">链接</a>）
-山东理工大学官网：<a href="http://www.sdut.edu.cn">链接</a> | 山东理工大学·数学与统计学院：<a href="https://sci.sdut.edu.cn">链接</a>
+**QQ**：保密 | **联系电话**：保密 
+**E-mail**：*songning@sdut.edu.cn*
+**新浪微博**：蒜泥学数学（<a href="https://weibo.com/mathsofsunny?is_all=1">链接</a>）
+山东理工大学官网：<a href="http://www.sdut.edu.cn">链接</a> 
+山东理工大学·数学与统计学院：<a href="https://sci.sdut.edu.cn">链接</a>
 
 ---
