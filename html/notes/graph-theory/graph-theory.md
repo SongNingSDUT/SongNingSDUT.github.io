@@ -20,7 +20,7 @@
 
 ## <a name="basic"> 图论基础 </a>
 
-1. 图论中的图
+1. 图论中的图：<a href="/html/notes/graph-theory/basic/graph.html">链接</a>
 2. 一些特殊图类
 
 ---
