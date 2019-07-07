@@ -17,13 +17,9 @@
 
 ## <a name="aboutme"> 自我介绍 </a>
 
-<table border="0" align="center">
-<tr>
-<td><img src="./img/weihai1.jpg" style="zoom:50%" border="0"/></td>
-<td><img src="./img/zuozhe.jpg" style="zoom:50%" border="0"/></td>
-<td><img src="./img/heying1.jpg" style="zoom:65%" border="0"/></td>
-</tr>
-</table>
+<center>
+<img src="./img/1.jpg" style="zoom:120%"/>
+</center>
 
 **单位**：*山东理工大学·数学与统计学院·数学系*
 **毕业院校**：*南开大学·组合数学中心*
