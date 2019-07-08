@@ -57,10 +57,6 @@
 
 ---
 
-## <a name="planar"> 可平面图 </a>
-
----
-
 ## <a name="vcolor"> 顶点染色 </a>
 
 ---
@@ -71,11 +67,17 @@
 
 ## <a name="discharge"> 权转移法 </a>
 
+---
 
+## <a name="ramsey"> Ramsey问题 </a>
+
+1. 经典的Ramsey问题（缺）
+2. Gallai染色问题：<a href="/html/notes/graph-theory/ramsey/gallai-coloring.html">链接</a>
 
 ---
 
-## <a name="gallai"> Gallai染色 </a>
+## <a name="prop"> 概率方法 </a>
+
 ---
 
 ## <a name="finite"> 有限几何 </a>
