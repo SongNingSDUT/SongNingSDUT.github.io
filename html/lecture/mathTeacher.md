@@ -22,6 +22,9 @@
 ### 《数学学科知识与教学能力》（初级中学）
 
 + 考试大纲：<a href="/html/lecture/mathTeacher/chuzhong/chuzhong-exam.html">链接</a>
++ 2019年上半年考试真题：<a href="/html/lecture/mathTeacher/chuzhong/2019-1-e.html">试卷</a> <a href="/html/lecture/mathTeacher/chuzhong/2019-1-a.html">答案（暂缺）</a>
++ 2018年下半年考试真题：<a href="/html/lecture/mathTeacher/chuzhong/2018-2-e.html">试卷（暂缺）</a> <a href="/html/lecture/mathTeacher/chuzhong/2018-2-a.html">答案（暂缺）</a>
++ 2018年上半年考试真题：<a href="/html/lecture/mathTeacher/chuzhong/2018-1-e.html">试卷（暂缺）</a> <a href="/html/lecture/mathTeacher/chuzhong/2018-1-a.html">答案（暂缺）</a>
 
 ### 《数学学科知识与教学能力》（高级中学）
 
