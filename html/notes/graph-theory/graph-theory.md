@@ -32,8 +32,8 @@
 ## <a name="basic"> 图论基础 </a>
 
 1. 图论中的图：<a href="/html/notes/graph-theory/basic/graph.html">链接</a>
-2. 子图与特殊图类：<a href="/html/notes/graph-theory/basic/subgraph.html">链接（以下缺）</a>
-3. 图运算：<a href="/html/notes/graph-theory/basic/operation.html">链接</a>
+2. 子图、路、圈和树：<a href="/html/notes/graph-theory/basic/subgraph.html">链接</a>
+3. 图运算：<a href="/html/notes/graph-theory/basic/operation.html">链接（以下缺）</a>
 4. 再说子图：<a href="/html/notes/graph-theory/basic/sub-2.html">链接</a>
 5. 分解与覆盖：<a href="/html/notes/graph-theory/basic/des-cov.html">链接</a>
 6. 割集与键：<a href="/html/notes/graph-theory/basic/cut.html">链接</a>
