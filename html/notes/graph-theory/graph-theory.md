@@ -34,9 +34,9 @@
 1. 图论中的图：<a href="/html/notes/graph-theory/basic/01-graph.html">链接</a>
 2. 子图、路、圈和树：<a href="/html/notes/graph-theory/basic/02-subgraph.html">链接</a>
 3. 二部图和完全图：<a href="/html/notes/graph-theory/basic/03-com.html">链接</a>
-4. 图运算：<a href="/html/notes/graph-theory/basic/04-operation.html">链接（以下缺）</a>
-4. 再说子图：<a href="/html/notes/graph-theory/basic/sub-2.html">链接</a>
-5. 分解与覆盖：<a href="/html/notes/graph-theory/basic/des-cov.html">链接</a>
+4. 图运算：<a href="/html/notes/graph-theory/basic/04-operation.html">链接</a>
+5. 顶点的度：<a href="/html/notes/graph-theory/basic/05-degree.html">链接</a>
+5. 分解与覆盖：<a href="/html/notes/graph-theory/basic/des-cov.html">链接（以下缺）</a>
 6. 割集与键：<a href="/html/notes/graph-theory/basic/cut.html">链接</a>
 7. 图与矩阵：<a href="/html/notes/graph-theory/basic/mat.html">链接</a>
 8. 割边与欧拉环游：<a href="/html/notes/graph-theory/basic/eul.html">链接</a>

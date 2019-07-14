@@ -23,9 +23,11 @@
 
 + $G\cap H$是一个新图，称为$G$和$H$的==交==，其顶点集$V(G\cap H)=V(G)\cap V(H)$，其边集$E(G\cap H)=E(G)\cap E(H)$；特别地，如果$G$和$H$是不交的，那么其交为零图。
 
-+ 如果$H$是$G$的子图，那么$G\setminus H$也是一个新图，称为$G$和$H$的==差==，其顶点集$V(G\setminus H)=V(G)\setminus V(H)$，其边集$E(G\setminus H)=E(G)\setminus E(H)$。
++ $G\setminus H$也是一个新图，称为$G$和$H$的==差==，其顶点集$V(G\setminus H)=V(G)\setminus V(H)$，其边集$E(G\setminus H)=E(G)\setminus E(H)$。
 
-> 注：有人也喜欢把$G\setminus H$写作$G-H$。
+> 注：
+> + 设$A,B$是两个集合。$A\setminus B=\{x\in A:x\not\in B\}$。
+> + 有人也喜欢把$G\setminus H$写作$G-H$。
 
 + $G\triangle H$是一个新图，称为$G$和$H$的==对称差==，其定义为$G\triangle H=(G\cup H)\setminus(G\cap H)$。
 
