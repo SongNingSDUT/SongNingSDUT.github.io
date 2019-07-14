@@ -1,9 +1,9 @@
 <!DOCTYPE html><html><head>
-      <title>graph-theory</title>
+      <title>00-basic</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///C:\Users\Ning Song\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.4.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css">
       
       
 
@@ -25,7 +25,7 @@
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="%E5%AE%8B%E5%AE%81%E7%9A%84%E6%95%B0%E5%AD%A6%E4%B8%96%E7%95%8C%E5%9B%BE%E8%AE%BA%E7%AC%94%E8%AE%B0">&#x5B8B;&#x5B81;&#x7684;&#x6570;&#x5B66;&#x4E16;&#x754C;&#xFF1A;&#x56FE;&#x8BBA;&#x7B14;&#x8BB0;</h1>
+      <h1 class="mume-header" id="%E5%AE%8B%E5%AE%81%E7%9A%84%E6%95%B0%E5%AD%A6%E4%B8%96%E7%95%8C%E5%9B%BE%E8%AE%BA%E5%9F%BA%E7%A1%80">&#x5B8B;&#x5B81;&#x7684;&#x6570;&#x5B66;&#x4E16;&#x754C;&#xFF1A;&#x3010;&#x56FE;&#x8BBA;&#x57FA;&#x7840;&#x3011;</h1>
 
 <p style="color:sienna;font-family:KaiTi;margin-left:35px;font-weight:bold;font-size:20px" ;>
     &#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x77E5;&#x9053;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x5C06;&#x77E5;&#x9053;
@@ -33,58 +33,59 @@
 <hr>
 <h2 class="mume-header" id="%E7%9B%AE%E5%BD%95">&#x76EE;&#x5F55;</h2>
 
+<ul>
+<li><a href="#1">1. &#x57FA;&#x672C;&#x6982;&#x5FF5;</a></li>
+<li><a href="#2">2. &#x5176;&#x4ED6;</a></li>
+<li><a href="..\graph-theory.html"> &#x8FD4;&#x56DE;&#x3010;&#x56FE;&#x8BBA;&#x7B14;&#x8BB0;&#x3011; </a></li>
+</ul>
+<hr>
+<h2 class="mume-header" id="a-name1-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-a"><a name="1" href> 1. &#x57FA;&#x672C;&#x6982;&#x5FF5; </a></h2>
+
 <table border="0">
 <tbody><tr>
-<td><a href="basic\00-basic.html">&#x56FE;&#x8BBA;&#x57FA;&#x7840;</a></td>
-<td><a href="#topu">&#x62D3;&#x6251;&#x56FE;&#x8BBA;</a></td>
-<td><a href="#prop">&#x6982;&#x7387;&#x65B9;&#x6CD5;</a></td>
-<td><a href="#vcolor">&#x9876;&#x70B9;&#x67D3;&#x8272;</a></td>
-<td><a href="#ecolor">&#x8FB9;&#x67D3;&#x8272;</a></td>
-<td><a href="#discharge">&#x6743;&#x8F6C;&#x79FB;&#x6CD5;</a></td>
-<td><a href="#algebra">&#x4EE3;&#x6570;&#x56FE;&#x8BBA;</a></td>
-<td><a href="#finite">&#x6709;&#x9650;&#x51E0;&#x4F55;</a></td>
-<td><a href="#article">&#x4E13;&#x9898;&#x7B14;&#x8BB0;</a></td>
+<td>
+1. &#x56FE;&#x8BBA;&#x4E2D;&#x7684;&#x56FE;&#xFF1A;<a href="01-graph.html">&#x94FE;&#x63A5;
+</a></td>
+<td>
+2. &#x5B50;&#x56FE;&#x3001;&#x8DEF;&#x3001;&#x5708;&#x548C;&#x6811;&#xFF1A;<a href="02-subgraph.html">&#x94FE;&#x63A5;</a>
+</td>
+<td>
+3. &#x4E8C;&#x90E8;&#x56FE;&#x548C;&#x5B8C;&#x5168;&#x56FE;&#xFF1A;<a href="03-com.html">&#x94FE;&#x63A5;</a>
+</td>
+<td>
+4. &#x56FE;&#x8FD0;&#x7B97;&#xFF1A;<a href="04-operation.html">&#x94FE;&#x63A5;</a>
+</td>
+</tr>
+<tr>
+<td>
+5. &#x9876;&#x70B9;&#x7684;&#x5EA6;&#xFF1A;<a href="05-degree.html">&#x94FE;&#x63A5;</a>
+</td>
+<td>
+6. &#x6709;&#x5411;&#x56FE;&#xFF1A;<a href="06-digraph.html">&#x94FE;&#x63A5;</a>
+</td>
 </tr>
 </tbody></table>
-<h2 class="mume-header" id="a-nametopu-%E6%8B%93%E6%89%91%E5%9B%BE%E8%AE%BA-a"><a name="topu" href> &#x62D3;&#x6251;&#x56FE;&#x8BBA; </a></h2>
+<hr>
+<h2 class="mume-header" id="a-name2-2-%E5%85%B6%E4%BB%96-a"><a name="2" href> 2. &#x5176;&#x4ED6; </a></h2>
 
-<ol>
-<li>&#x66F2;&#x9762;&#x4E0E;&#x62D3;&#x6251;&#x56FE;&#xFF1A;<a href="planar\topu.html">&#x94FE;&#x63A5;</a></li>
+<ol start="5">
+<li>&#x5206;&#x89E3;&#x4E0E;&#x8986;&#x76D6;&#xFF1A;<a href="des-cov.html">&#x94FE;&#x63A5;&#xFF08;&#x4EE5;&#x4E0B;&#x7F3A;&#xFF09;</a></li>
+<li>&#x5272;&#x96C6;&#x4E0E;&#x952E;&#xFF1A;<a href="cut.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x56FE;&#x4E0E;&#x77E9;&#x9635;&#xFF1A;<a href="mat.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x5272;&#x8FB9;&#x4E0E;&#x6B27;&#x62C9;&#x73AF;&#x6E38;&#xFF1A;<a href="eul.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x56FE;&#x4E0E;&#x77E9;&#x9635;&#xFF1A;<a href="mat.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x53CC;&#x5708;&#x8986;&#x76D6;&#x731C;&#x60F3;&#xFF1A;<a href="dcc.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x6811;&#x4E0E;&#x68EE;&#x6797;&#xFF1A;<a href="tree.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x57FA;&#x672C;&#x5708;&#x4E0E;&#x952E;&#xFF1A;<a href="bcb.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x5272;&#x70B9;&#x4E0E;&#x4E0D;&#x53EF;&#x5206;&#x56FE;&#xFF1A;<a href="sep.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x8033;&#x6735;&#x5206;&#x89E3;&#xFF1A;<a href="ear.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x6811;&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#xFF1A;<a href="search.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x6709;&#x5411;&#x56FE;&#x4E0E;&#x8D4B;&#x6743;&#x56FE;&#xFF1A;<a href="di.html">&#x94FE;&#x63A5;</a></li>
+<li>&#x6700;&#x5C0F;&#x652F;&#x6491;&#x6811;&#xFF1A;<a href="di.html">&#x94FE;&#x63A5;</a></li>
 </ol>
-<hr>
-<h2 class="mume-header" id="a-nameprop-%E6%A6%82%E7%8E%87%E6%96%B9%E6%B3%95-a"><a name="prop" href> &#x6982;&#x7387;&#x65B9;&#x6CD5; </a></h2>
-
-<hr>
-<h2 class="mume-header" id="a-namevcolor-%E9%A1%B6%E7%82%B9%E6%9F%93%E8%89%B2-a"><a name="vcolor" href> &#x9876;&#x70B9;&#x67D3;&#x8272; </a></h2>
-
-<hr>
-<h2 class="mume-header" id="a-nameecolor-%E8%BE%B9%E6%9F%93%E8%89%B2-a"><a name="ecolor" href> &#x8FB9;&#x67D3;&#x8272; </a></h2>
-
-<hr>
-<h2 class="mume-header" id="a-namedischarge-%E6%9D%83%E8%BD%AC%E7%A7%BB%E6%B3%95-a"><a name="discharge" href> &#x6743;&#x8F6C;&#x79FB;&#x6CD5; </a></h2>
-
-<hr>
-<h2 class="mume-header" id="a-namealgebra-%E4%BB%A3%E6%95%B0%E5%9B%BE%E8%AE%BA-a"><a name="algebra" href> &#x4EE3;&#x6570;&#x56FE;&#x8BBA; </a></h2>
-
-<hr>
-<h2 class="mume-header" id="a-namefinite-%E6%9C%89%E9%99%90%E5%87%A0%E4%BD%95-a"><a name="finite" href> &#x6709;&#x9650;&#x51E0;&#x4F55; </a></h2>
-
-<hr>
-<h2 class="mume-header" id="a-namearticle-%E4%B8%93%E9%A2%98%E7%AC%94%E8%AE%B0-a"><a name="article" href> &#x4E13;&#x9898;&#x7B14;&#x8BB0; </a></h2>
-
-<h4 class="mume-header" id="%E4%B8%80-gallai-ramsey%E6%95%B0%E9%97%AE%E9%A2%98">&#x4E00;&#x3001;Gallai-Ramsey&#x6570;&#x95EE;&#x9898;</h4>
-
-<ol>
-<li>Gallai-Ramsey&#x6570;&#x7B80;&#x4ECB;&#xFF1A;<a href="ramsey\01-intro.html">&#x94FE;&#x63A5;</a></li>
-<li>Gallai&#x67D3;&#x8272;&#x95EE;&#x9898;&#xFF1A;<a href="ramsey\02-gallai-coloring.html">&#x94FE;&#x63A5;</a></li>
-</ol>
-<h4 class="mume-header" id="%E4%BA%8C-%E5%9B%BE%E9%A5%B1%E5%92%8C%E6%95%B0">&#x4E8C;&#x3001;&#x56FE;&#x9971;&#x548C;&#x6570;</h4>
-
-<h4 class="mume-header" id="%E4%B8%89-%E5%9B%BE%E4%BA%A4%E5%8F%89%E6%95%B0">&#x4E09;&#x3001;&#x56FE;&#x4EA4;&#x53C9;&#x6570;</h4>
-
 <hr>
 <ul>
-<li><a href="..\..\..\index.html"> &#x8FD4;&#x56DE;&#x4E3B;&#x9875; </a></li>
+<li><a href="..\graph-theory.html"> &#x8FD4;&#x56DE;&#x3010;&#x56FE;&#x8BBA;&#x7B14;&#x8BB0;&#x3011; </a></li>
 </ul>
 
       </div>

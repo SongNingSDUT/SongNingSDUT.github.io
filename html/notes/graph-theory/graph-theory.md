@@ -10,7 +10,7 @@
 
 <table border="0">
 <tr>
-<td><a href="#basic">图论基础</a></td>
+<td><a href="/html/notes/graph-theory/basic/00-basic.html">图论基础</a></td>
 <td><a href="#topu">拓扑图论</a></td>
 <td><a href="#prop">概率方法</a></td>
 <td><a href="#vcolor">顶点染色</a></td>
@@ -21,33 +21,6 @@
 <td><a href="#article">专题笔记</a></td>
 </tr>
 </table>
-
-+ <a href="/index.html"> 返回主页 </a>
-
----
-
-## <a name="basic"> 图论基础 </a>
-
-1. 图论中的图：<a href="/html/notes/graph-theory/basic/01-graph.html">链接</a>
-2. 子图、路、圈和树：<a href="/html/notes/graph-theory/basic/02-subgraph.html">链接</a>
-3. 二部图和完全图：<a href="/html/notes/graph-theory/basic/03-com.html">链接</a>
-4. 图运算：<a href="/html/notes/graph-theory/basic/04-operation.html">链接</a>
-5. 顶点的度：<a href="/html/notes/graph-theory/basic/05-degree.html">链接</a>
-5. 分解与覆盖：<a href="/html/notes/graph-theory/basic/des-cov.html">链接（以下缺）</a>
-6. 割集与键：<a href="/html/notes/graph-theory/basic/cut.html">链接</a>
-7. 图与矩阵：<a href="/html/notes/graph-theory/basic/mat.html">链接</a>
-8. 割边与欧拉环游：<a href="/html/notes/graph-theory/basic/eul.html">链接</a>
-9. 图与矩阵：<a href="/html/notes/graph-theory/basic/mat.html">链接</a>
-10. 双圈覆盖猜想：<a href="/html/notes/graph-theory/basic/dcc.html">链接</a>
-11. 树与森林：<a href="/html/notes/graph-theory/basic/tree.html">链接</a>
-12. 基本圈与键：<a href="/html/notes/graph-theory/basic/bcb.html">链接</a>
-13. 割点与不可分图：<a href="/html/notes/graph-theory/basic/sep.html">链接</a>
-14. 耳朵分解：<a href="/html/notes/graph-theory/basic/ear.html">链接</a>
-15. 树搜索算法：<a href="/html/notes/graph-theory/basic/search.html">链接</a>
-16. 有向图与赋权图：<a href="/html/notes/graph-theory/basic/di.html">链接</a>
-17. 最小支撑树：<a href="/html/notes/graph-theory/basic/di.html">链接</a>
-
----
 
 ## <a name="topu"> 拓扑图论 </a>
 
