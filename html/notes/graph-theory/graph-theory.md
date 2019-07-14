@@ -12,16 +12,13 @@
 <tr>
 <td><a href="#basic">图论基础</a></td>
 <td><a href="#topu">拓扑图论</a></td>
-<td><a href="#vcolor">顶点染色</a></td>
-<td><a href="#ecolor">边图染色</a></td>
-<td><a href="#discharge">权转移法</a></td>
-</tr>
-<tr>
-<td><a href="#ramsey">Ramsey问题</a></td>
 <td><a href="#prop">概率方法</a></td>
-<td><a href="#gallai">Gallai染色</a></td>
-<td><a href="#saturate">图饱和数</a></td>
+<td><a href="#vcolor">顶点染色</a></td>
+<td><a href="#ecolor">边染色</a></td>
+<td><a href="#discharge">权转移法</a></td>
+<td><a href="#algebra">代数图论</a></td>
 <td><a href="#finite">有限几何</a></td>
+<td><a href="#article">专题笔记</a></td>
 </tr>
 </table>
 
@@ -58,6 +55,10 @@
 
 ---
 
+## <a name="prop"> 概率方法 </a>
+
+---
+
 ## <a name="vcolor"> 顶点染色 </a>
 
 ---
@@ -70,28 +71,28 @@
 
 ---
 
-## <a name="ramsey"> Ramsey问题 </a>
-
-1. 经典的Ramsey问题（缺）
-2. Gallai染色问题：<a href="/html/notes/graph-theory/ramsey/gallai-coloring.html">链接</a>
-
----
-
-## <a name="prop"> 概率方法 </a>
+## <a name="algebra"> 代数图论 </a>
 
 ---
 
 ## <a name="finite"> 有限几何 </a>
 
 
-
 ---
 
-## <a name="gallai"> 图饱和数 </a>
+## <a name="article"> 专题笔记 </a>
 
----
+#### 一、Gallai-Ramsey数问题
 
-## <a name="crossing"> 图交叉数 </a>
+1. Gallai-Ramsey数简介：<a href="/html/notes/graph-theory/ramsey/01-intro.html">链接</a>
+2. Gallai染色问题：<a href="/html/notes/graph-theory/ramsey/02-gallai-coloring.html">链接</a>
+
+#### 二、图饱和数
+
+
+#### 三、图交叉数
+
+
 
 ---
 

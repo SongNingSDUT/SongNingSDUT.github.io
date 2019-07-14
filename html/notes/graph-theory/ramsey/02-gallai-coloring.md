@@ -1,4 +1,4 @@
-# 【图论笔记】Ramsey类问题（2）：完全图的 Gallai 染色
+# 【图论笔记】Gallai-Ramsey数（2）：Gallai染色
 
 Gallai染色得名与匈牙利著名组合学家Gallai对可比图的研究工作．
 
