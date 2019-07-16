@@ -10,6 +10,7 @@
 <td><a href="#lecture"> 我的课程</a></td>
 <td><a href="#note"> 我的笔记</a></td>
 <td><a href="#peixun"> 培训项目</a></td>
+<td><a href="#/html/ggb.html"> GeoGebra作品</a></td>
 <td><a href="#source"> 资源链接</a></td>
 <td><a href="#contact"> 联系方式</a></td>
 </tr>
@@ -61,7 +62,6 @@
 1. 初等欧氏几何：<a href="/pdf/elementary-euclidean-geometry.pdf">下载</a>
 2. LaTeX试卷模板：<a href="/others/latex/exam-SDUT/exam-SDUT.rar">下载</a>
 3. 解析几何补充材料（矩阵和行列式）：<a href="/pdf/geometry-linear-alg.pdf">下载</a>
-4. GeoGebra作品：<a href="/html/ggb.html">下载</a>
 
 ---
 
