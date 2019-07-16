@@ -10,9 +10,12 @@
 <td><a href="#lecture"> 我的课程</a></td>
 <td><a href="#note"> 我的笔记</a></td>
 <td><a href="#peixun"> 培训项目</a></td>
-<td><a href="/html/ggb.html"> Geo Gebra</a></td>
+
 <td><a href="#source"> 资源链接</a></td>
 <td><a href="#contact"> 联系方式</a></td>
+</tr>
+<tr>
+<td><a href="/html/ggb.html"> GeoGebra</a></td>
 </tr>
 </table>
 
