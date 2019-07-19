@@ -44,6 +44,9 @@
 
 ## <a name="discharge"> 权转移法 </a>
 
+1. 一个简单的例子：<a href="/html/notes/graph-theory/discharge/00-basic.html">链接</a>
+
+
 ---
 
 ## <a name="algebra"> 代数图论 </a>
