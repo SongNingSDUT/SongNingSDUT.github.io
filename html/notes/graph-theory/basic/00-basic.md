@@ -41,6 +41,9 @@
 <td>
 7. 图与矩阵：<a href="/html/notes/graph-theory/basic/07-matrix.html">链接</a>
 </td>
+<td>
+8. 分解与覆盖：<a href="/html/notes/graph-theory/basic/08-decom.html">链接</a>
+</td>
 </tr>
 </table>
 
