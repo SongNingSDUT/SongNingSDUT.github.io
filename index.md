@@ -15,7 +15,7 @@
 <td><a href="#contact"> 联系方式</a></td>
 </tr>
 <tr>
-<td><a href="/html/ggb.html"> GeoGebra</a></td>
+<td><a href="/html/ggb.html"> 动画作品</a></td>
 </tr>
 </table>
 

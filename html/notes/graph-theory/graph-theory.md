@@ -16,9 +16,9 @@
 <td><a href="#vcolor">顶点染色</a></td>
 <td><a href="#ecolor">边染色</a></td>
 <td><a href="#discharge">权转移法</a></td>
-<td><a href="#algebra">代数图论</a></td>
 </tr>
 <tr>
+<td><a href="#algebra">代数图论</a></td>
 <td><a href="#finite">有限几何</a></td>
 <td><a href="#article">专题笔记</a></td>
 </tr>
