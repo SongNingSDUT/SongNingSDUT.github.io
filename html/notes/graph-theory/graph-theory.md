@@ -44,8 +44,9 @@
 
 ## <a name="discharge"> 权转移法 </a>
 
-1. 一个简单的例子：<a href="/html/notes/graph-theory/discharge/00-basic.html">链接</a>
-
+0. 一个简单的例子：<a href="/html/notes/graph-theory/discharge/00-basic.html">链接</a>
+1. 构型和不可回避集：<a href="/html/notes/graph-theory/discharge/01-config.html">链接</a>
+2. 初始电荷量和放电规则：<a href="/html/notes/graph-theory/discharge/02-init.html">链接</a>
 
 ---
 
