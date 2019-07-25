@@ -27,7 +27,7 @@
 
 >$\mathcal{G}$中的每个成员总会含有$\mathcal{H}$中的某个构型．
 
-一般地，我们设$\mathcal{G}$是一个图族，$\mathcal{H}$是一个由构型组成的集合．如果$\mathcal{G}$中每个成员都含有$\mathcal{H}$中至少一个构型，那么，我们就说==构型集$\mathcal{H}$是图族$\mathcal{G}$所**无法回避**的==，或者说$\mathcal{H}$是$\mathcal{G}$的==不可回避集==（unavoidable set）．
+一般地，我们设$\mathcal{G}$是一个图族，$\mathcal{H}$是一个由构型组成的集合．如果$\mathcal{G}$中每个成员都含有$\mathcal{H}$中至少一个构型，那么，我们就说==构型集$\mathcal{H}$是图族$\mathcal{G}$所无法回避的==，或者说$\mathcal{H}$是$\mathcal{G}$的==不可回避集==（unavoidable set）．
 
 如果我们依然设$\mathcal{G}$所有最小度为$5$的平面三角剖分图所构成的图族，并且记$\mathcal{H}=\{H_1,H_2\}$，那么，在上述命题最终可以改写为
 

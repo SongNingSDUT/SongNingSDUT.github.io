@@ -14,7 +14,7 @@
 <td><a href="#topu">拓扑图论</a></td>
 <td><a href="#prop">概率方法</a></td>
 <td><a href="#vcolor">顶点染色</a></td>
-<td><a href="#ecolor">边染色</a></td>
+<td><a href="#ecolor">边的染色</a></td>
 <td><a href="#discharge">权转移法</a></td>
 </tr>
 <tr>
