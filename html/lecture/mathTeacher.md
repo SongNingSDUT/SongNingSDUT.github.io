@@ -69,4 +69,8 @@
 
 ---
 
++ 测试HTML5幻灯片：<a href="/html/lecture/temp-md">链接</a>
+
+---
+
 <a href="/index.html"> 返回我的主页 </a>
