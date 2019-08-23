@@ -69,7 +69,7 @@
 
 ---
 
-+ 测试HTML5幻灯片：<a href="/html/lecture/temp-md">链接</a>
++ 测试HTML5幻灯片：<a href="/html/lecture/temp-md/ppt.html">链接</a>
 
 ---
 
