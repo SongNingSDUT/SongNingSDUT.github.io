@@ -46,7 +46,7 @@
 
 1. 图论相关: <a href="/html/notes/graph-theory/graph-theory.html">链接</a>
 2. 代数相关: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
-3. 几何相关: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
+3. 几何相关: <a href="/html/notes/geometry/geometry.html">链接（缺）</a>
 4. 线性代数: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
 5. 数学分析: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>
 6. 概率论: <a href="/html/notes/graph-theory/graph-theory.html">链接（缺）</a>

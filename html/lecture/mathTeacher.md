@@ -38,38 +38,35 @@
 ## <a name="lecture"> 《数学教学论》教学讲义 </a>
 
 1. 第一讲 绪论（2课时）<a href="/html/lecture/mathTeacher/jiangyi/01.html">链接</a>
-2. 第二讲 基础教育中的数学课程（4课时）<a href="/html/lecture/mathTeacher/jiangyi/02.html">链接</a>
-3. 第三讲 数学教育理论（4课时）<a href="/html/lecture/mathTeacher/jiangyi/03.html">链接</a>
-4. 第四讲 数学教学的目标、原则、方法与模式（4课时）<a href="/html/lecture/mathTeacher/jiangyi/04.html">链接</a>
-5. 第五讲 数学教学设计（6课时）<a href="/html/lecture/mathTeacher/jiangyi/05.html">链接</a>
-6. 第六讲 数学概念的教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/06.html">链接</a>
-7. 第七讲 数学命题的教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/07.html">链接</a>
-8. 第八讲 数学思想方法与数学问题的解决（4课时）<a href="/html/lecture/mathTeacher/jiangyi/08.html">链接</a>
-9. 第九讲 数学课堂呈现的艺术（4课时）<a href="/html/lecture/mathTeacher/jiangyi/09.html">链接</a>
-10. 第十讲 数学教育评价与教学研究（4课时）<a href="/html/lecture/mathTeacher/jiangyi/10.html">链接</a>
+2. 第二讲 与时俱进的数学教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/02.html">链接</a>
+3. 第三讲 数学教育理论（4课时）<a href="/html/lecture/mathTeacher/jiangyi/03.html">链接（缺）</a>
+4. 第四讲 数学教学的目标、原则、方法与模式（4课时）<a href="/html/lecture/mathTeacher/jiangyi/04.html">链接（缺）</a>
+5. 第五讲 数学教学设计（6课时）<a href="/html/lecture/mathTeacher/jiangyi/05.html">链接（缺）</a>
+6. 第六讲 数学概念的教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/06.html">链接（缺）</a>
+7. 第七讲 数学命题的教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/07.html">链接（缺）</a>
+8. 第八讲 数学思想方法与数学问题的解决（4课时）<a href="/html/lecture/mathTeacher/jiangyi/08.html">链接（缺）</a>
+9. 第九讲 数学课堂呈现的艺术（4课时）<a href="/html/lecture/mathTeacher/jiangyi/09.html">链接（缺）</a>
+10. 第十讲 数学教育评价与教学研究（4课时）<a href="/html/lecture/mathTeacher/jiangyi/10.html">链接（缺）</a>
 
 ---
 
 ## <a name="biao"> 数学课程标准 </a>
 
-1. 义务教育阶段数学课程标准 <a href="/html/lecture/mathTeacher/gaozhong/2019-1-a.html">下载（暂缺）</a>
-2. 普通高中数学课程标准 <a href="/html/lecture/mathTeacher/gaozhong/2019-1-a.html">下载（暂缺）</a>
+1. 义务教育阶段数学课程标准（2011版） <a href="/html/lecture/mathTeacher/chuzhong/kebiao-2011.pdf">下载（暂缺）</a>
+2. 普通高中数学课程标准（2017版） <a href="/html/lecture/mathTeacher/gaozhong/kebiao-2017.pdf">链接</a>
 
 ---
 
 ## <a name="book"> 中小学数学教材链接 </a>
 
-（缺）
+<a href="http://www.dzkbw.com/books/rjb/shuxue/">链接</a>
+
 
 ---
 
 ## <a name="video"> 优秀视频链接 </a>
 
 （缺）
-
----
-
-+ 测试HTML5幻灯片：<a href="/html/lecture/temp-md/ppt.html">链接</a>
 
 ---
 
