@@ -8,12 +8,7 @@
 
 ## 目录
 
-+ <a href="#zige">教师资格考试</a>
-+ <a href="#lecture">教学讲义</a>
-+ <a href="#biao">数学课程标准</a>
-+ <a href="#video">优秀视频链接</a>
-+ <a href="#book">中小学数学教材链接</a>
-+ <a href="/index.html"> 返回我的主页 </a>
+[toc]
 
 ---
 
@@ -35,7 +30,7 @@
 
 ---
 
-## <a name="lecture"> 《数学教学论》教学讲义 </a>
+## 《数学教学论》教学讲义
 
 1. 第一讲 绪论（2课时）<a href="/html/lecture/mathTeacher/jiangyi/01.html">链接</a>
 2. 第二讲 与时俱进的数学教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/02.html">链接</a>
@@ -50,21 +45,21 @@
 
 ---
 
-## <a name="biao"> 数学课程标准 </a>
+## 数学课程标准
 
-1. 义务教育阶段数学课程标准（2011版） <a href="/html/lecture/mathTeacher/chuzhong/kebiao-2011.pdf">下载（暂缺）</a>
+1. 义务教育阶段数学课程标准（2011版） <a href="/html/lecture/mathTeacher/chuzhong/kebiao-2011.pdf">链接</a>
 2. 普通高中数学课程标准（2017版） <a href="/html/lecture/mathTeacher/gaozhong/kebiao-2017.pdf">链接</a>
 
 ---
 
-## <a name="book"> 中小学数学教材链接 </a>
+## 中小学数学教材
 
 <a href="http://www.dzkbw.com/books/rjb/shuxue/">链接</a>
 
 
 ---
 
-## <a name="video"> 优秀视频链接 </a>
+## 优秀视频链接
 
 （缺）
 
