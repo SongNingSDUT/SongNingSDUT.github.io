@@ -12,8 +12,8 @@
 
 ## 初等几何
 
-0. 概述：<a href="/html/notes/basic/geometry/00-intro.html">链接</a>
-1. 结合关系与结合公理：<a href="/html/notes/basic/geometry/01-jiehe.html">链接</a>
+0. 概述：<a href="/html/notes/geometry/basic/00-intro.html">链接</a>
+1. 结合关系与结合公理：<a href="/html/notes/geometry/basic/01-jiehe.html">链接</a>
 
 ---
 
