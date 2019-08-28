@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>02</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fff; --control-text-color: #777; }
+html { font-size: 14px; }
+body { color: rgb(52, 73, 94); -webkit-font-smoothing: antialiased; line-height: 1.6rem; letter-spacing: 0px; margin: 0px; overflow-x: hidden; font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !important; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write p { line-height: 1.6rem; word-spacing: 0.05rem; }
+#write ol li { text-indent: 0.5rem; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
+a { color: rgb(66, 185, 131); font-weight: 600; padding: 0px 2px; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit !important; }
+h2 tt, h2 code { font-size: inherit !important; }
+h3 tt, h3 code { font-size: inherit !important; }
+h4 tt, h4 code { font-size: inherit !important; }
+h5 tt, h5 code { font-size: inherit !important; }
+h6 tt, h6 code { font-size: inherit !important; }
+h2 a, h3 a { color: rgb(52, 73, 94); }
+h1 { padding-bottom: 0.4rem; font-size: 2.2rem; line-height: 1.3; }
+h2 { font-size: 1.75rem; line-height: 1.225; margin: 35px 0px 15px; padding-bottom: 0.5em; border-bottom: 1px solid rgb(221, 221, 221); }
+h3 { font-size: 1.4rem; line-height: 1.43; margin: 20px 0px 7px; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 1rem; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+body > h2:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(66, 185, 131); padding: 10px 15px; color: rgb(119, 119, 119); background-color: rgba(66, 185, 131, 0.1); }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(250, 250, 250); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+#write strong { padding: 0px 1px; }
+#write em { padding: 0px 5px 0px 2px; }
+#write table thead th { background-color: rgb(242, 242, 242); }
+#write .CodeMirror-gutters { border-right: none; }
+#write .md-fences { border: 1px solid rgb(244, 244, 244); -webkit-font-smoothing: initial; line-height: 1.43rem; border-radius: 2px; font-size: 0.85rem; overflow-wrap: normal; margin: 0.8rem 0px !important; padding: 0.3rem 0px !important; background-color: rgb(248, 248, 248) !important; font-family: "Roboto Mono", "Source Sans Pro", Monaco, courier, monospace !important; }
+#write .CodeMirror-wrap .CodeMirror-code pre { padding-left: 12px; }
+#write code, tt { margin: 0px 2px; padding: 2px 4px; border-radius: 2px; font-size: 0.92rem; color: rgb(233, 105, 0); background-color: rgb(248, 248, 248); font-family: "Roboto Mono", "Source Sans Pro", Monaco, courier, monospace !important; }
+#write .md-footnote { background-color: rgb(248, 248, 248); color: rgb(233, 105, 0); }
+#write mark { background-color: rgb(235, 255, 235); border-radius: 2px; padding: 2px 4px; margin: 0px 2px; color: rgb(34, 34, 34); font-weight: 500; }
+#write del { padding: 1px 2px; }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(34, 162, 201); }
+.cm-s-inner .cm-string { color: rgb(34, 162, 201); }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+#md-notification::before { top: 10px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><p>&nbsp;</p><h1><a name="第二讲-与时俱进的数学教育" class="md-header-anchor"></a><span>第二讲 与时俱进的数学教育</span></h1><hr /><h2><a name="目录" class="md-header-anchor"></a><span>目录</span></h2><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n285"><a class="md-toc-inner" href="#第二讲-与时俱进的数学教育">第二讲 与时俱进的数学教育</a></span><span class="md-toc-item md-toc-h2" data-ref="n287"><a class="md-toc-inner" href="#目录">目录</a></span><span class="md-toc-item md-toc-h2" data-ref="n290"><a class="md-toc-inner" href="#开场白">〇、开场白</a></span><span class="md-toc-item md-toc-h2" data-ref="n307"><a class="md-toc-inner" href="#一数学观与数学教育观">一、数学观与数学教育观</a></span><span class="md-toc-item md-toc-h3" data-ref="n309"><a class="md-toc-inner" href="#11-数学观">1.1 数学观</a></span><span class="md-toc-item md-toc-h3" data-ref="n351"><a class="md-toc-inner" href="#12-数学教育观">1.2 数学教育观</a></span><span class="md-toc-item md-toc-h2" data-ref="n397"><a class="md-toc-inner" href="#二数学课程与数学课标">二、数学课程与数学课标</a></span><span class="md-toc-item md-toc-h2" data-ref="n418"><a class="md-toc-inner" href="#三义务教育数学课程标准2011版）">三、《义务教育数学课程标准（2011版）》</a></span><span class="md-toc-item md-toc-h2" data-ref="n420"><a class="md-toc-inner" href="#31-课程性质和基本理念">3.1. 课程性质和基本理念</a></span><span class="md-toc-item md-toc-h2" data-ref="n480"><a class="md-toc-inner" href="#32-学段划分与课程内容">3.2. 学段划分与课程内容</a></span><span class="md-toc-item md-toc-h2" data-ref="n531"><a class="md-toc-inner" href="#33-十个关键词">3.3. 十个关键词</a></span><span class="md-toc-item md-toc-h2" data-ref="n557"><a class="md-toc-inner" href="#四普通高中数学课程标准2017版）">四、《普通高中数学课程标准（2017版）》</a></span><span class="md-toc-item md-toc-h2" data-ref="n560"><a class="md-toc-inner" href="#五课后作业">五、课后作业</a></span></p></div><hr /><h2><a name="开场白" class="md-header-anchor"></a><span>〇、开场白</span></h2><p><span>前些年，网络上一度盛传“数学无用论”，甚至有人喊出口号“数学滚出高考”。这就给新时代的数学教育工作者提出了一个问题：</span></p><ul><li><mark><span>当代的数学观和数学教育观应该是什么样的？</span></mark></li></ul><p><span>那么在这样的数学观和数学教育观之下，</span></p><ul><li><mark><span>我国基础教育中的数学课程进行了哪些改革？实施了什么样的课程标准？</span></mark></li></ul><p><span>无论进行什么样的课程改革，数学课程和数学教学的根本依据都是“数学课程标准”，这是我们教育部门制定的、用来指导中小学数学教学的基础性文件。在我国，数学课程标准又分为</span></p><ul><li><mark><span>《义务教育数学课程标准》</span></mark></li><li><mark><span>《普通高中数学课程标准》</span></mark></li></ul><p><span>既然这两个文件这么重要，那么我们当然有必要了解一下这两个文件。以上四方面就是本讲的核心内容。</span></p><hr /><h2><a name="一数学观与数学教育观" class="md-header-anchor"></a><span>一、数学观与数学教育观</span></h2><h3><a name="11-数学观" class="md-header-anchor"></a><span>1.1 数学观</span></h3><p><mark><span>数学观</span></mark><span>是人们对于数学的本质、规律和活动的认识，反映了某一时期的人们对当时主流数学的见解。因而数学观总是与特定的时代挂钩，纵观数学发展史，数学的发展已经经历了四个高峰，即：</span></p><ol start='' ><li><span>以《几何原本》为代表的</span><mark><span>古希腊的公理化数学</span></mark><span>（约公元前700年~约公元前300年）</span></li><li><span>以牛顿发明微积分为代表的</span><mark><span>无穷小算法数学</span></mark><span>（17世纪~18世纪）</span></li><li><span>以希尔伯特为代表的</span><mark><span>现代公理化数学</span></mark><span>（19世纪~20世纪中叶）</span></li><li><span>以现代计算机技术为代表的</span><mark><span>信息时代数学</span></mark><span>（20世纪中叶~今）</span></li></ol><p><span>在古希腊之前的数学，以青铜时代的四大河谷文明的古代数学为代表的，没有数学证明，只有算术和经验几何学，而且目的在于解决生活中遇到的实际问题。自古希腊开始，数学有了演绎推理和严密证明，而最早的论证数学开始于约公元前700年左右的泰勒斯和毕达哥拉斯。尤其是欧几里得在《几何原本》中建立起了原始的公理化体系。从此时开始，在相当长的历史时期内，西方人的数学就是古希腊式的几何学。</span></p><p><span>这种情况在牛顿、莱布尼兹生活的时代发生了变化。在那个时代，航海、军事、工业等方面的强烈要求解决函数求导和积分的问题，古希腊式的几何学已经不适用了，数学家根本来不及建立严密的微积分理论。牛顿和莱布尼兹所发明的微积分，在当时仅仅是“能用就行”：没有严格地定义极限，也没有完善的实数理论，基础是谁也说不清楚的所谓“无穷小量”。所以，作为当时主流数学的微积分，在当时仅仅是一种“说不清楚”但是“能用就行”的无穷小算法而已。虽然基础不牢固，但是在工业经济的强烈需求下，微积分就是在这种“说不清楚”的状态中发展了130多年。</span></p><p><span>这种情况到18世纪晚期发生了变化，1789年法国大革命以及后来的拿破仑战争彻底改变了法国的社会面貌并促使德国发生转变，两国的数学发展随之进入了快车道。最先是法国数学界开始呼唤微积分基础的严密化，这项工作最终在法国数学家柯西和德国数学家魏尔斯特拉斯手中基本实现，从而开始第三个数学高峰。数学家们开始致力于数学基础的严密化。这个时代的高潮出现在19世纪末到20世纪中叶的五六十年间。首先是1899年，希尔伯特出版了《几何基础》，将欧几里得的比较原始公理体系严密化，建立起现代公理体系，</span><mark><span>形式主义</span></mark><span>数学观成为主流。</span></p><p><span>希尔伯特认为，绝对严密的公理体系应该形式化推理结果，应该刨除直观想象的干扰。在希尔伯特几何体系中，有三个无定义的基本对象：</span><mark><span>点</span></mark><span>、</span><mark><span>直线</span></mark><span>、</span><mark><span>平面</span></mark><span>；还有三个无定义的基本关系：</span><mark><span>结合</span></mark><span>、</span><mark><span>顺序</span></mark><span>、</span><mark><span>合同</span></mark><span>。由于基本对象和基本关系没有定义，所以它们仅仅是形式而已，与我们的直观体会没有任何关系。那么基本对象和基本关系由什么来刻画呢？希尔伯特给出了五组共二十条公理，并且证明了这个公理体系具有</span><mark><span>相容性</span></mark><span>、</span><mark><span>独立性</span></mark><span>和</span><mark><span>完备性</span></mark><span>，从而使得所有欧氏几何的定理都可以在这个体系内部通过形式化的推理得到。</span></p><p><span>到了20世纪30年代，法国出现</span><mark><span>布尔巴基学派</span></mark><span>，将形式主义数学观推向了巅峰。布尔巴基学派强调</span><mark><span>结构</span></mark><span>，他们提出三种</span><mark><span>数学母结构</span></mark><span>，即</span><mark><span>代数结构</span></mark><span>（如群、环、域、体等）、</span><mark><span>拓扑结构</span></mark><span>（如各种拓扑空间）、</span><mark><span>序结构</span></mark><span>（在各种序关系下建立的结构），他们认为应该从公里集合论出发，利用三种数学母结构构造出已知的所有数学，进而实现数学各分支的公理化。布尔巴基运动对现代数学产生巨大的影响，我们现在学习的泛函、拓扑学、抽象代数等都是受到布尔巴基运动的强烈影响。甚至于曾经长期认为无法公理化的概率论也被前苏联数学家柯尔莫果洛夫实现了公理化，我们现在所学的概率的定义，其实就是柯尔莫果洛夫给出的概率三公理。</span></p><p><span>但是，这种形式化到了一定的极端后，必然带来脱离现实的问题，以至于英国数学家哈代说出了：“最好的数学就是没用的数学”这样的话。形式主义浪潮收到两个事件的冲击：</span></p><ul><li><span>哥德尔定理：任何包含一阶谓词逻辑与初等数论的公理体系中，总存在无法证明的命题。</span></li></ul><p><span>这表明极端的形式化是无法实现的。</span></p><ul><li><span>与计算机关系巨大的计算数学和组合数学无法公理化。</span></li></ul><p><span>计算数学和组合数学有大量的小问题，无法通过数学结构将其统一在一个公理体系中，而且这些小问题往往也是布尔巴基学派所无能为力的。尤其是七十年代四色猜想最终依靠计算机得以证明，这标志着一个新的数学时代的到来。四色定理的证明使用了Discharge方法，它本质上依然是严谨的演绎推理，但是在这个证明中有几百种</span><mark><span>构型</span></mark><span>要被排除掉（在最初的证明中，有1800多种构型，在九十年代被简化到几百种构型），这个过程无法使用人工完成，最终使用了计算机程序实现。</span></p><p><span>在我们这个信息爆炸的时代，随着计算机技术的广泛应用，数学已经成为一种可以直接产生经济效益的</span><mark><span>数学技术</span></mark><span>。在计算机技术的支持下，当代数学正在越来越关注于应用。另一方面，由于有太多的超大规模的实际问题需要处理，严密的数学推理又一次跟不上时代的需求，这方面有两个典型例子可以说明问题。</span></p><ul><li><mark><span>NP难题</span></mark><span>在现实工业中的处理。</span></li></ul><p><span>能使用计算机快速解决的问题是P问题，即有多项式时间算法的问题，这类问题已经在数学上得到了透彻的研究，依照多项式时间算法可以使用计算机快速解决。但是更多的问题只能使用多项式时间验证但目前不知道有没有多项式时间算法的问题，这就是NP难题。但是NP难题在实际工业生产中又经常遇到，比如芯片设计中经常会遇到大量的NP难题，而且芯片设计的实例往往又具有超大规模（VLSI，超大规模集成电路）。在实际处理，不得不采用一些启发式算法处理。这类算法，我们在数学上几乎说不清楚，我们不知道它们的运算速度究竟有多快，也不知道它们能不能得到最优解，甚至说不清它们给出的解究竟好到什么程度。我们只能通过模拟实验来了解其性能。</span></p><ul><li><mark><span>大数据</span></mark><span>和</span><mark><span>机器学习</span></mark><span>的广泛应用。</span></li></ul><p><span>大数据技术和机器学习技术在当今时代得到了广泛的应用。它们虽然使用了很多数学，但是它们的数学基础并不坚固。以著名的机器学习程序AlphaGo为例。著名的AlphaGo在短时间内打败很多世界一流的围棋高手，一时间名声大振。它的原理在于，首先要喂给它大量的人类对弈的棋谱供它学习，这个过程称为“训练”，然后才能使它获得强大的棋力。但是这个过程现在很难用数学给出严密的刻画，我们无法预知它最后的下棋策略是如何形成的。AlphaGo的改进型AlphaZero则更加强大，在训练阶段不需要给出人类对弈的棋谱，只需要提供规则，让他自己“闭关修炼”即可。这个过程我们更无法给出严密的数学刻画。</span></p><p><span>因此，在我们现在所处的第四次数学高峰中，我们可以看到，严谨纯粹的数学和“不太清楚但够用就行”的数学同时并存。所以我们这个时代的数学观出现了如下的特点：</span></p><ol start='' ><li><span>公理化、形式化、演绎推理仍然是数学的本质特征；</span></li><li><span>当代数学非常重视计算机技术支持下的应用，数学已经成为一种可以直接产生经济效益的技术；</span></li><li><span>数学不等于逻辑，封闭的数学研究不利于数学发展。</span></li></ol><h3><a name="12-数学教育观" class="md-header-anchor"></a><span>1.2 数学教育观</span></h3><p><span>在端正了数学观之后，我们有必要进一步问一下自己，作为一个当代数学教育者，我们应该具备什么样的数学教育观？</span></p><ul><li><p><em><span>从</span><mark><span>数学知识和技能</span></mark><span>的角度来看：</span></em></p><ol start='' ><li><span>我们的数学教育仍然要保持“重视基础”的传统。我国中小学数学教育一直有重视</span><mark><span>基础知识</span></mark><span>和</span><mark><span>基本技能</span></mark><span>的传统，即所谓</span><mark><span>双基</span></mark><span>。但是在新时代，仅有“双基”是不够的，在最新的数学课标中，双基已经扩展为</span><mark><span>四基</span></mark><span>，即：</span><mark><span>基础知识</span></mark><span>、</span><mark><span>基本技能</span></mark><span>、</span><mark><span>基本思想</span></mark><span>、</span><mark><span>基本活动经验</span></mark><span>。换言之，你的数学教学中：不能只教数学知识和技能，还要渗透数学思想；不能只有教师讲授，还要有学生参与的数学活动。</span></li><li><span>由于数学应用在新时代收到高度重视，所以我们的数学教育也应该重视从数学角度</span><mark><span>发现</span></mark><span>和</span><mark><span>提出</span></mark><span>问题的能力、</span><mark><span>分析</span></mark><span>和</span><mark><span>解决</span></mark><span>问题的能力，这在新课标中称为</span><mark><span>四能</span></mark><span>。</span></li></ol></li><li><p><em><span>从</span><mark><span>数学核心素养</span></mark><span>的角度来看：</span></em></p><ol start='' ><li><span>由于公理化、形式化、演绎推理仍然是数学的本质特征，所以我们的数学教育依然要强调</span><mark><span>数学抽象</span></mark><span>、</span><mark><span>逻辑推理</span></mark><span>和</span><mark><span>数学运算</span></mark></li><li><span>由于当代数学在计算机技术的支持下体现出巨大的应用性，所以我们的数学教育需要强调</span><mark><span>数学建模</span></mark><span>，又因为当代数学的应用性很多时候体现为对于数据的分析和处理能力，所以我们的数学教育需要强调</span><mark><span>数据分析</span></mark></li><li><span>由于数学不等同于逻辑，所以我们的数学教育还需要强调</span><mark><span>直观想象</span></mark><span>。</span></li></ol></li></ul><p><span>【上述的</span><mark><span>数学抽象</span></mark><span>、</span><mark><span>逻辑推理</span></mark><span>、</span><mark><span>数学运算</span></mark><span>、</span><mark><span>数学建模</span></mark><span>、</span><mark><span>数据分析</span></mark><span>、</span><mark><span>直观想象</span></mark><span>，就是2017版《普通高中数学课程标准》所提出的</span><mark><span>六素养</span></mark><span>】</span></p><ul><li><p><em><span>从</span><mark><span>情感、态度、价值观</span></mark><span>的角度来看</span></em><span>，当代的数学教育的终极目标在于</span><mark><span>人的培养</span></mark><span>，在学生的数学教育中要有人情味，所以我们的数学教育应该强调：</span></p><ol start='' ><li><span>提高数学学习的</span><mark><span>兴趣</span></mark><span>，增强学好数学的</span><mark><span>自信心</span></mark><span>，养成良好的数学学习</span><mark><span>习惯</span></mark><span>，发展</span><mark><span>自主学习</span></mark><span>的能力；</span></li><li><span>树立敢于</span><mark><span>质疑</span></mark><span>、善于</span><mark><span>思考</span></mark><span>、</span><mark><span>严谨求实</span></mark><span>的</span><mark><span>科学精神</span></mark><span>；</span></li><li><span>不断提升</span><mark><span>实践意识</span></mark><span>和</span><mark><span>创新意识</span></mark><span>；</span></li><li><span>重视数学的</span><mark><span>科学价值</span></mark><span>、</span><mark><span>应用价值</span></mark><span>、</span><mark><span>文化价值</span></mark><span>和</span><mark><span>审美价值</span></mark><span>，这是新课标提出的</span><mark><span>四种价值</span></mark><span>。</span></li></ol></li></ul><p><span>关于科学价值和应用价值，大家学了这么多年数学，我就不解释了。关于数学的文化价值，请大家课后详细阅读教材第二章第二节。</span></p><p><span>最后一个，数学的审美价值：一提起数学美，很多同学可能首先会想到2019年高考数学试题中的维纳斯，这个题目涉及到著名的黄金分割，但是这种美是浅层次的数学美。我们通常说“美”，往往是指美术、音乐、体育中体现出的美，但是这种美是外显的美，数学美虽然有时可能是外显的，比如黄金分割，但是更多情况下是蕴含在内部的美，是一种</span><mark><span>内蕴美</span></mark><span>，数学美蕴含于</span><mark><span>巧妙的思路、严密的逻辑、和谐完美的结论</span></mark><span>。关于数学美，建议大家阅读</span><mark><span>吴军老师的《数学之美》</span></mark><span>。</span></p><ul><li><p><em><span>从教师的</span><mark><span>自身定位</span></mark><span>来看：</span></em></p><ol start='' ><li><span>从教学的控制者向学习的引导者转变（注重学生学习的</span><mark><span>主体性</span></mark><span>）</span></li><li><span>从知识的传授者向知识的建构者转变（注重数学知识的</span><mark><span>形成逻辑</span></mark><span>）</span></li><li><span>从</span><mark><span>教书匠</span></mark><span>这一单纯角色向</span><mark><span>教书匠-教育家</span></mark><span>双重角色转变（注重数学教育的</span><mark><span>哲学思考</span></mark><span>，推荐张景中院士的《数学哲学》）</span></li></ol></li></ul><p><span>那么，在这样的数学观和数学教育观之下，我们有必要了解一下我国进行了哪些数学课程改革，这部分内容主要来自第六章《数学课程的制定与改革》。</span></p><hr /><h2><a name="二数学课程与数学课标" class="md-header-anchor"></a><span>二、数学课程与数学课标</span></h2><p><span>数学课程制定和改革的指导性文件就是</span><mark><span>数学课程标准</span></mark><span>，简称</span><mark><span>课标</span></mark><span>，也曾经被称为</span><mark><span>教学大纲</span></mark><span>，它规定了数学课程的</span><mark><span>课程性质</span></mark><span>、</span><mark><span>基本理念</span></mark><span>、</span><mark><span>课程目标</span></mark><span>、</span><mark><span>课程结构</span></mark><span>、</span><mark><span>课程内容</span></mark><span>、</span><mark><span>实施建议</span></mark><span>等。</span></p><p><span>我国数学课程标准的雏形最早出现在1904年清朝政府颁布的《奏定学堂章程》中，《奏定学堂章程》中的某些部分规定了中小学数学科目，但是没有其他详细的规定。随后在北洋政府时期和国民政府时期，我国政府又颁布了很多数学课标（三十余部），但要么编制不详，要么在乱世中缺乏执行力。</span></p><p><span>数学课程和课标真正的春天出现在新中国建国后。</span></p><ul><li><span>1950年，我国教育部颁布了第一版小学数学课标和中学课标，旨在精简和统合新中国成立前的数学教材。</span></li><li><span>1952年，仿照苏联模式，我国颁布了《中学数学教学大纲（草案）》，我国数学教学开始步入正轨。</span></li><li><span>同一时期，东北人民政府引进苏联著名数学教育家基谢廖夫的《算术》、《代数》和《平面几何》三本教材，随后教育部推广至全国使用。上述教学大纲和教材对我国基础数学教学产生了深远影响（基谢廖夫的《几何》在2015年又在俄罗斯再次出版）。</span></li><li><span>1954年，我国正式编写了以基谢廖夫教材为蓝本的适合我国国情的数学教材。</span></li><li><span>60年代和70年代，受到大跃进运动和“文化大革命”的干扰，我国数学课标（教纲）、数学教材和数学课程都出现较大的偏差，到80年代又回到正轨。</span></li><li><span>1988年的《义务教育初中数学教学大纲》和1996年的《普通高中数学教学大纲（实验）》奠定了我们现在数学课标和数学课程的基础。</span></li><li><span>2001年开始，数学教学大纲改称数学课程标准。2001版义务教育课标出现较大问题，后来做了修订，目前已被2011版替代。</span></li></ul><p><span>目前我国使用的小学和初中的数学课标为《义务教育数学课程标准（2011版）》，普通高中使用的数学课标是《普通高中数学课程标准（2017版）》。下面我们简要介绍一下这两个课标的内容和理念。</span></p><hr /><h2><a name="三义务教育数学课程标准2011版）" class="md-header-anchor"></a><span>三、《义务教育数学课程标准（2011版）》</span></h2><p><span>用一句话概括2011版义务教育数学课标，那就是：</span><mark><span>三性质</span></mark><span>、</span><mark><span>五理念</span></mark><span>、</span><mark><span>四内容</span></mark><span>、</span><mark><span>十关键</span></mark></p><h2><a name="31-课程性质和基本理念" class="md-header-anchor"></a><span>3.1. 课程性质和基本理念</span></h2><p><em><span>课程性质：</span></em></p><ul><li><span>义务教育阶段的数学课程是培养公民素质的基础课程，具有</span><mark><span>基础性</span></mark><span>、</span><mark><span>普遍性</span></mark><span>和</span><mark><span>发展性</span></mark><span>。</span></li><li><span>数学课程能使学生掌握必备的</span><mark><span>基础知识</span></mark><span>和</span><mark><span>基本技能</span></mark><span>，培养学生的</span><mark><span>抽象思维</span></mark><span>和</span><mark><span>理解能力</span></mark><span>，培养学生的</span><mark><span>创新意识</span></mark><span>和</span><mark><span>实践能力</span></mark><span>，促进学生的</span><mark><span>情感、态度与价值观</span></mark><span>等方面的发展。</span></li><li><span>义务教育的数学课程能为学生未来生活、工作和学习</span><mark><span>奠定重要的基础</span></mark><span>。</span></li></ul><p><em><span>基本理念：</span></em></p><ol start='' ><li><p><span>既要</span><mark><span>面向全体学生</span></mark><span>，又要</span><mark><span>适应个性发展</span></mark><span>。</span></p><ul><li><span>允许学生经过一定的过程，随着积累逐步达到标准。每个学生在原有基础上的任何进步都是学生的一种发展；</span></li><li><span>还要鼓励学生主动探索、不断超越，标准不是限制而是学生发展的催化剂。</span></li></ul></li><li><p><span>既要反映</span><mark><span>社会的需要</span></mark><span>和</span><mark><span>数学的特点</span></mark><span>，又要符合学生的认知规律。</span></p><ul><li><span>课程内容的选择要</span><mark><span>贴近学生的实际</span></mark><span>，有利于学生的体验与理解、思考与探索；</span></li><li><span>不仅包括数学的结果，也要包括数学结果的</span><mark><span>形成过程</span></mark><span>和蕴含的</span><mark><span>数学思想方法</span></mark><span>；</span></li><li><span>要重视</span><mark><span>直观</span></mark><span>，处理好直观与抽象的关系；</span></li><li><span>要重视</span><mark><span>直接经验</span></mark><span>，处理好直接经验与间接经验的关系；</span></li><li><span>课程内容的呈现应注意</span><mark><span>层次性</span></mark><span>和</span><mark><span>多样性</span></mark><span>。</span></li></ul></li><li><p><span>将</span><mark><span>学生学</span></mark><span>与</span><mark><span>教师教</span></mark><span>在</span><mark><span>数学教学活动</span></mark><span>中统一。</span></p><ul><li><span>学生是学习的主体；</span></li><li><span>教师是学习的组织者，引导者与合作者；</span></li><li><span>数学教学活动是师生积极参与、交往互动、共同发展的过程。</span></li></ul></li><li><p><span>建立</span><mark><span>目标多元</span></mark><span>、</span><mark><span>方法多样</span></mark><span>的评价体系。</span></p><ul><li><span>评价的目的是为了全面了解数学学习的</span><mark><span>过程</span></mark><span>和</span><mark><span>结果</span></mark><span>；</span></li><li><span>既要关注学生数学学习的水平，也要重视学生在数学活动中表现出来的</span><mark><span>情感与态度</span></mark><span>；</span></li><li><span>评价要帮助学生</span><mark><span>认识自我</span></mark><span>、</span><mark><span>建立信心</span></mark><span>、</span><mark><span>激励学习</span></mark><span>，帮助教师</span><mark><span>改进教学</span></mark><span>。</span></li></ul></li><li><p><span>注重信息技术与课程内容的整合。</span></p><ul><li><span>根据实际情况合理地运用现代信息技术，注重实效；</span></li><li><span>要充分考虑信息技术对数学学习内容和方式的影响；</span></li><li><span>开发并向学生提供丰富的学习资源；</span></li><li><span>把信息技术作为学生学习数学和解决问题的有力工具。</span></li></ul></li></ol><h2><a name="32-学段划分与课程内容" class="md-header-anchor"></a><span>3.2. 学段划分与课程内容</span></h2><p><em><span>学段划分：</span></em></p><figure><table><thead><tr><th><span>学段</span></th><th><span>年级</span></th></tr></thead><tbody><tr><td><span>第一学段</span></td><td><span>1~3年级（小学低年级）</span></td></tr><tr><td><span>第二学段</span></td><td><span>4~6年级（小学高年级）</span></td></tr><tr><td><span>第三学段</span></td><td><span>7~9年级（初级中学）</span></td></tr></tbody></table></figure><p><em><span>7~9年级的课程内容：</span></em></p><ol start='' ><li><p><span>数与代数</span></p><ul><li><span>数与式（有理数；实数；代数式；整式与分式）</span></li><li><span>方程与不等式（方程与方程组；不等式与不等式组）</span></li><li><span>函数（函数；一次函数；二次函数）</span></li></ul></li><li><p><span>图形与几何</span></p><ul><li><span>图形的性质（点线面角；相交线与平行线；三角形；四边形；圆；尺规作图；定义、命题和定理）</span></li><li><span>图形的变化（轴对称；旋转；平移；相似；投影）</span></li><li><span>图形与坐标（坐标与图形位置；坐标与图形运动）</span></li></ul></li><li><p><span>统计与概率</span></p><ul><li><span>抽样与数据分析</span></li><li><span>事件的概率</span></li></ul></li><li><p><span>综合与实践</span></p><ul><li><span>实际情境-建立模型-解决问题</span></li><li><span>反思过程-形成报告-交流经验</span></li><li><span>探讨问题-关联知识-理解知识-应用意识</span></li></ul></li></ol><h2><a name="33-十个关键词" class="md-header-anchor"></a><span>3.3. 十个关键词</span></h2><ol start='' ><li><span>数感</span></li><li><span>符号意识</span></li><li><span>空间观念</span></li><li><span>几何直观</span></li><li><span>数据分析观念</span></li><li><span>运算能力</span></li><li><span>推理能力</span></li><li><span>模型思想</span></li><li><span>应用意识</span></li><li><span>创新意识</span></li></ol><p><span>详细解读请关注</span><mark><span>中国大学MOOC</span></mark><span>网站中北大曹一鸣教授开设的慕课：</span></p><blockquote><p><mark><span>中学数学课程标准与教材研究</span></mark></p></blockquote><hr /><h2><a name="四普通高中数学课程标准2017版）" class="md-header-anchor"></a><span>四、《普通高中数学课程标准（2017版）》</span></h2><p><span>见课件</span></p><hr /><h2><a name="五课后作业" class="md-header-anchor"></a><span>五、课后作业</span></h2><p><span>阅读两个课程标准</span></p><hr /><ul><li><a href="/html/lecture/mathTeacher.html"><span> 返回《数学教学论》 </span></a></li></ul></div>
+</body>
+</html>
