@@ -15,7 +15,7 @@
 ### 初等几何基础
 
 0. 概述：<a href="/html/notes/geometry/basic/00-intro.html">链接</a>
-1. 关联关系与关联公理：<a href="/html/notes/geometry/basic/01-jiehe.html">链接</a>
+1. 关联关系与关联公理：<a href="/html/notes/geometry/basic/01-jiehe.html">上</a> <a href="/html/notes/geometry/basic/01-jiehe-2.html">下</a>
 2. 介于关系与顺序公理：<a href="/html/notes/geometry/basic/02-shunxu.html">链接</a>
 3. 合同关系与合同公理：<a href="/html/notes/geometry/basic/03-hetong.html">链接</a>
 
