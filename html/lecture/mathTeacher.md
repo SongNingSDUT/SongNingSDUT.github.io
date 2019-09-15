@@ -34,7 +34,8 @@
 
 1. 第一讲 绪论（2课时）<a href="/html/lecture/mathTeacher/jiangyi/01.html">链接</a>
 2. 第二讲 与时俱进的数学教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/02.html">链接</a>
-3. 第三讲 数学教育理论（4课时）<a href="/html/lecture/mathTeacher/jiangyi/03.html">链接（缺）</a>
+3. 第三讲 数学教育理论（上）（6课时）<a href="/html/lecture/mathTeacher/jiangyi/03.html">链接（缺）</a>
+4. 第三讲 数学教育理论（下）（4课时）<a href="/html/lecture/mathTeacher/jiangyi/03-2.html">链接（缺）</a>
 4. 第四讲 数学教学的目标、原则、方法与模式（4课时）<a href="/html/lecture/mathTeacher/jiangyi/04.html">链接（缺）</a>
 5. 第五讲 数学教学设计（6课时）<a href="/html/lecture/mathTeacher/jiangyi/05.html">链接（缺）</a>
 6. 第六讲 数学概念的教学（4课时）<a href="/html/lecture/mathTeacher/jiangyi/06.html">链接（缺）</a>

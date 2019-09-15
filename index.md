@@ -37,7 +37,7 @@
 ## <a name="lecture"> 我的课程</a>
 
 1. 空间解析几何：<a href="/html/lecture/analysegeo.html">链接</a>
-2. 初等几何研究：<a href="/html/lecture/basicgeo.html">链接</a>
+2. 初等几何研究：<a href="/html/lecture/BasicGeo.html">链接</a>
 3. 数学教学论：<a href="/html/lecture/mathTeacher.html">链接</a>
 
 ---
