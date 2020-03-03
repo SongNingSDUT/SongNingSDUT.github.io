@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>04</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+.ty-preferences .window-content { background-color: rgb(250, 250, 250); }
+.ty-preferences .nav-group-item.active { color: white; background: rgb(153, 153, 153); }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><p><span>目录</span></p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n3"><a class="md-toc-inner" style="cursor: pointer;" href="#第四讲-数学教学的核心内容">第四讲 数学教学的核心内容</a></span><span class="md-toc-item md-toc-h2" data-ref="n4"><a class="md-toc-inner" style="cursor: pointer;" href="#开场白">〇、开场白</a></span><span class="md-toc-item md-toc-h2" data-ref="n15"><a class="md-toc-inner" style="cursor: pointer;" href="#一数学教学的目标">一、数学教学的目标</a></span><span class="md-toc-item md-toc-h3" data-ref="n16"><a class="md-toc-inner" style="cursor: pointer;" href="#11-教学目标的陈述主语">1.1 教学目标的陈述主语</a></span><span class="md-toc-item md-toc-h3" data-ref="n25"><a class="md-toc-inner" style="cursor: pointer;" href="#12-教学目标的分类">1.2 教学目标的分类</a></span><span class="md-toc-item md-toc-h3" data-ref="n50"><a class="md-toc-inner" style="cursor: pointer;" href="#13-教学目标的层次性">1.3 教学目标的层次性</a></span><span class="md-toc-item md-toc-h4" data-ref="n52"><a class="md-toc-inner" style="cursor: pointer;" href="#131-结果性目标的四个层次">1.3.1 结果性目标的四个层次</a></span><span class="md-toc-item md-toc-h4" data-ref="n92"><a class="md-toc-inner" style="cursor: pointer;" href="#132-过程性目标的三个层次">1.3.2 过程性目标的三个层次</a></span><span class="md-toc-item md-toc-h3" data-ref="n123"><a class="md-toc-inner" style="cursor: pointer;" href="#14-数学教学目标的设计要求">1.4 数学教学目标的设计要求</a></span><span class="md-toc-item md-toc-h3" data-ref="n139"><a class="md-toc-inner" style="cursor: pointer;" href="#15-教学目标的陈述方法">1.5 教学目标的陈述方法</a></span><span class="md-toc-item md-toc-h2" data-ref="n164"><a class="md-toc-inner" style="cursor: pointer;" href="#二数学教学的原则">二、数学教学的原则</a></span><span class="md-toc-item md-toc-h3" data-ref="n175"><a class="md-toc-inner" style="cursor: pointer;" href="#21-学习数学化原则">2.1 学习数学化原则</a></span><span class="md-toc-item md-toc-h3" data-ref="n177"><a class="md-toc-inner" style="cursor: pointer;" href="#22-适度形式化原则">2.2 适度形式化原则</a></span><span class="md-toc-item md-toc-h4" data-ref="n179"><a class="md-toc-inner" style="cursor: pointer;" href="#221-数学的形式化">2.2.1 数学的形式化</a></span><span class="md-toc-item md-toc-h4" data-ref="n200"><a class="md-toc-inner" style="cursor: pointer;" href="#222-数学教学中对形式化的适度把握">2.2.2 数学教学中对形式化的适度把握</a></span><span class="md-toc-item md-toc-h3" data-ref="n206"><a class="md-toc-inner" style="cursor: pointer;" href="#23-问题驱动原则">2.3 问题驱动原则</a></span><span class="md-toc-item md-toc-h3" data-ref="n209"><a class="md-toc-inner" style="cursor: pointer;" href="#24-渗透数学思想方法的原则">2.4 渗透数学思想方法的原则</a></span><span class="md-toc-item md-toc-h2" data-ref="n215"><a class="md-toc-inner" style="cursor: pointer;" href="#三数学教学的方法与模式">三、数学教学的方法与模式</a></span><span class="md-toc-item md-toc-h3" data-ref="n261"><a class="md-toc-inner" style="cursor: pointer;" href="#31-讲授式教学模式">3.1 讲授式教学模式</a></span><span class="md-toc-item md-toc-h3" data-ref="n276"><a class="md-toc-inner" style="cursor: pointer;" href="#32-讨论式教学模式">3.2 讨论式教学模式</a></span><span class="md-toc-item md-toc-h3" data-ref="n286"><a class="md-toc-inner" style="cursor: pointer;" href="#33-学生活动式教学模式">3.3 学生活动式教学模式</a></span><span class="md-toc-item md-toc-h3" data-ref="n288"><a class="md-toc-inner" style="cursor: pointer;" href="#34-探究式教学模式">3.4 探究式教学模式</a></span><span class="md-toc-item md-toc-h3" data-ref="n290"><a class="md-toc-inner" style="cursor: pointer;" href="#35-发现式教学模式">3.5 发现式教学模式</a></span><span class="md-toc-item md-toc-h3" data-ref="n495"><a class="md-toc-inner" style="cursor: pointer;" href="#36-好的数学教学模式和方法的特性">3.6 好的数学教学模式和方法的特性</a></span></p></div><h1><a name="第四讲-数学教学的核心内容" class="md-header-anchor"></a><span>第四讲 数学教学的核心内容</span></h1><h2><a name="开场白" class="md-header-anchor"></a><span>〇、开场白</span></h2><p><span>本讲我们主要讲授数学教学的三个核心内容，即</span></p><ul><li><span>数学教学的目标</span></li><li><span>数学教学的原则</span></li><li><span>数学教学的方法与模式</span></li></ul><p><span>除此之外，数学教学还有一个核心内容，就是数学教学设计，这是我们这门课程的重点内容，我们将专门拿出三讲来讲授它。因此，我们这一讲更确切地说应该是，数学教学的核心内容中，除了数学教学设计以外的其他部分。</span></p><hr /><h2><a name="一数学教学的目标" class="md-header-anchor"></a><span>一、数学教学的目标</span></h2><h3><a name="11-教学目标的陈述主语" class="md-header-anchor"></a><span>1.1 教学目标的陈述主语</span></h3><p><span>数学教学目标所讨论的是：经过教师的教学，学生的学习能够达到何种水平。因此教学目标所讨论的主体不是教师，而是学生。所以在陈述数学教学目标时，陈述句的主语也是学生。尽管在实际陈述中，主语“学生”通常省略。但是我们在做教学设计时，应该时刻提醒自己：我们希望学生的学习达成什么目标？我们的教学设计能否引导学生完成这样的目标。</span></p><p><span>关于教学目标的陈述主语，我们可以辨析如下两个例子：</span></p><blockquote><p><span>例1. 掌握一次函数的图像及其简单性质</span></p></blockquote><blockquote><p><span>例2. 使学生增强数形结合的意识</span></p></blockquote><p><span>例2显然是不合适的，其陈述主语实际是教师；而例1是合乎规范的。</span></p><hr /><h3><a name="12-教学目标的分类" class="md-header-anchor"></a><span>1.2 教学目标的分类</span></h3><p><span>教学目标可以从纵向和横向两个方向来进行分类。</span></p><p><span>所谓纵向分类，就是按目标所针对的教学内容的级别来进行分类，包括</span></p><ul><li><p><span>总目标（课标规定）</span></p><ul><li><span>义务教育阶段数学教学总目标</span></li><li><span>普通高中阶段数学教学总目标</span></li></ul></li><li><p><span>学段目标（课标规定）</span></p><ul><li><span>义务教育阶段：三个学段</span></li><li><span>普通高中阶段：一个学段</span></li></ul></li><li><p><span>学年目标、学期目标</span></p></li><li><p><span>单元目标、课时目标</span></p></li></ul><p><span>其中，总目标和学段目标由课标规定。在我国，总目标有两个，分别是义务教育阶段的数学教学总目标和普通高中阶段的数学教学总目标。比总目标低一个级别的是学段目标，学段目标是对总目标的细化，在我国，也是由课标规定的。其中义务教育阶段分为三个学段，分别是：第一学段（1~3年级）、第二学段（4~6年级）、第三学段（7~9年级），课标中分别给出了它们的教学目标；而普通高中阶段的三年为一个完整的学段，所以该学段的教学目标与高中数学的总目标一致。比学段目标再低一个级别的是学年目标以及学期目标，它们往往由各区县教育局给出指导意见，具体由各学校各年级数学教学主管人员组织设计编写。比学期目标再低一个级别的是单元目标和课时目标，它们是对学期目标的细化分解，通常由相关任课教师设计编写，并交于该年级数学教学主管人员审核通过。</span></p><p><span>数学教学目标的另一种分类方式是横向分类。横向分类是指数学教学目标的三个维度，即：知识与技能、过程与方法、情感态度与价值观。课标中所述的各级教学目标，尤其是义务教育阶段的各级教学目标，都是分这三个维度加以陈述的。</span></p><hr /><h3><a name="13-教学目标的层次性" class="md-header-anchor"></a><span>1.3 教学目标的层次性</span></h3><p><span>在设计和陈述教学目标时，我们还要注意教学目标的层次性，也就是说，学生对不同知识点的学习要求是不同的。对于结果性目标，我们将其分成四个层次；对于过程性目标，我们将其分成三个层次。</span></p><h4><a name="131-结果性目标的四个层次" class="md-header-anchor"></a><span>1.3.1 结果性目标的四个层次</span></h4><p><span>结果性目标，即以某种学习结果作为教学目标；我们将其分为四个层次，即：了解 → 理解 → 掌握 → 运用</span></p><p><span>（一）</span><mark><span>了解</span></mark></p><p><span>含义：从具体实例中</span><strong><span>知道</span></strong><span>或</span><strong><span>举例说明</span></strong><span>对象的有关特征，根据对象的特征在具体情境中</span><strong><span>辨认</span></strong><span>或者</span><strong><span>举例说明</span></strong><span>对象</span></p><p><span>同类词：</span><strong><span>知道</span></strong><span>、</span><strong><span>初步认识</span></strong></p><p><span>举例：</span></p><ul><li><strong><span>了解</span></strong><span>一元二次方程的根与系数的关系</span></li><li><strong><span>知道</span></strong><span>实数与数轴上的点一一对应</span></li></ul><p><span>（二）</span><mark><span>理解</span></mark></p><p><span>含义：描述对象的</span><strong><span>特征</span></strong><span>和</span><strong><span>由来</span></strong><span>，阐述此对象与相关对象之间的</span><strong><span>区别</span></strong><span>和</span><strong><span>联系</span></strong></p><p><span>同类词：</span><strong><span>认识</span></strong><span>、</span><strong><span>会</span></strong></p><p><span>举例：</span></p><ul><li><strong><span>理解</span></strong><span>三角形的概念</span></li><li><strong><span>理解</span></strong><span>平行四边形、矩形、菱形、正方形的概念</span></li></ul><p><span>（三）</span><mark><span>掌握</span></mark></p><p><span>含义：在理解的基础上把对象</span><strong><span>用于新的情境</span></strong></p><p><span>同类词：</span><strong><span>能</span></strong><span>……</span></p><p><span>举例：</span></p><ul><li><strong><span>掌握</span></strong><span>平行线的性质定理</span></li><li><strong><span>能</span></strong><span>用锐角三角函数</span><strong><span>解</span></strong><span>直角三角形</span></li><li><strong><span>掌握</span></strong><span>等式的基本性质</span></li></ul><p><span>（四）</span><mark><span>运用</span></mark></p><p><span>含义：</span><strong><span>综合使用</span></strong><span>已掌握的对象，</span><strong><span>选择</span></strong><span>或</span><strong><span>创造</span></strong><span>适当的方式解决问题</span></p><p><span>同类词：</span><strong><span>解决</span></strong><span>、</span><strong><span>证明</span></strong></p><p><span>举例：</span></p><ul><li><span>探索并</span><strong><span>证明</span></strong><span>三角形的中位线定理</span></li><li><span>能用反比例函数</span><strong><span>解决</span></strong><span>简单实际问题</span></li></ul><h4><a name="132-过程性目标的三个层次" class="md-header-anchor"></a><span>1.3.2 过程性目标的三个层次</span></h4><p><span>过程性目标，即以经历某个学习过程作为教学目标，是目前课程标准很强调的一类教学目标；我们将其分为三个层次，即：经历 → 体验/体会 → 探索</span></p><p><span>（一）</span><mark><span>经历</span></mark></p><p><span>含义：在特定的数学活动中，获得一些</span><strong><span>感性认识</span></strong></p><p><span>同类词：</span><strong><span>感受、尝试</span></strong></p><p><span>举例：</span></p><ul><li><strong><span>经历</span></strong><span>收集、整理、描述和分析数据的活动，了解数据处理的过程</span></li><li><span>通过</span><strong><span>观察</span></strong><span>实物和模型，了解从物体中抽象出来的几何体</span></li></ul><p><span>（二）</span><mark><span>体验</span></mark></p><p><span>含义：参与特定的数学活动，</span><strong><span>主动认识或验证对象的特征</span></strong><span>，获得一些经验</span></p><p><span>同类词：</span><strong><span>体会</span></strong></p><p><span>举例：</span></p><ul><li><span>通过实例</span><strong><span>体会</span></strong><span>反证法的含义</span></li><li><span>通过对实际问题的分析，</span><strong><span>体会</span></strong><span>二次函数的意义</span></li></ul><p><span>（三）</span><mark><span>探索</span></mark></p><p><span>含义：独立或与他人合作参与特定的数学活动，理解或提出问题，寻求解决问题的思路，发现对象的特征，及其与相关对象的区别和获得一定的理性认识</span></p><p><span>举例：</span></p><ul><li><strong><span>探索</span></strong><span>并证明角平分线的性质定理</span></li><li><strong><span>探索</span></strong><span>并证明三角形的中位线定理</span></li><li><strong><span>探索</span></strong><span>圆周角、圆心角与其所对弧的关系</span></li></ul><hr /><h3><a name="14-数学教学目标的设计要求" class="md-header-anchor"></a><span>1.4 数学教学目标的设计要求</span></h3><ul><li><p><span>陈述</span><strong><span>学生</span></strong><span>的</span><strong><span>学习结果</span></strong><span>，而不是教师的行为</span></p><ul><li><span>阅读：课本308页案例1</span></li></ul></li><li><p><span>力求</span><strong><span>明确、具体、可观测</span></strong><span>，不应含糊、不切实际</span></p></li><li><p><span>应该反映学习结果和过程的</span><strong><span>层次性</span></strong></p></li><li><p><span>要强调</span><strong><span>过程性目标</span></strong><span>的价值，避免只谈结果性目标</span></p></li><li><p><span>注意</span><strong><span>突出重点难点</span></strong></p></li></ul><hr /><h3><a name="15-教学目标的陈述方法" class="md-header-anchor"></a><span>1.5 教学目标的陈述方法</span></h3><p><span>关于数学教学目标的陈述，我们这里介绍著名的</span><strong><span>ABCD法</span></strong><span>。所谓“ABCD”，即</span></p><ul><li><strong><span>A</span></strong><span>：Audience，</span><strong><span>听众</span></strong><span>，即学生，一般缺省</span></li><li><strong><span>B</span></strong><span>：Behavior，</span><strong><span>行为动词</span></strong><span>，不可缺省，主动式，其后连接行为内容</span></li><li><strong><span>C</span></strong><span>：Condition，</span><strong><span>条件</span></strong><span>，可以缺省</span></li><li><strong><span>D</span></strong><span>：Degree，</span><strong><span>表现程度</span></strong><span>，如：简单/复杂，一种解法/多种解法</span></li></ul><p><span>下面给出几个例子解释一下ABCD法的使用。</span></p><blockquote><p><span>例1 能解简单的一元二次方程。</span></p></blockquote><p><span>其中，【A】为</span><strong><span>学生</span></strong><span>，缺省；【B】为行为动词：“</span><strong><span>能解</span></strong><span>”，其行为内容为：“</span><strong><span>一元二次方程</span></strong><span>”；【C】为条件，这里没有条件，所以缺省；【D】为程度：“</span><strong><span>简单的</span></strong><span>”。</span></p><blockquote><p><span>例2 能运用已获得的结论，证明一些简单的空间位置关系的命题。</span></p></blockquote><p><span>其中，【A】为</span><strong><span>学生</span></strong><span>，缺省；【B】为行为动词：“</span><strong><span>能……证明</span></strong><span>”，其行为内容为：“</span><strong><span>空间位置关系的命题</span></strong><span>”；【C】为条件：“</span><strong><span>运用已获得的结论</span></strong><span>”；【D】为程度：“</span><strong><span>一些简单的</span></strong><span>”。</span></p><blockquote><p><span>例3 在证明勾股定理的过程中，了解面积法的基本思路。</span></p></blockquote><p><span>其中，【A】为</span><strong><span>学生</span></strong><span>，缺省；【B】为行为动词：“</span><strong><span>了解</span></strong><span>”，其行为内容：“</span><strong><span>面积法的基本思路</span></strong><span>”；【C】为条件：“</span><strong><span>在证明勾股定理的过程中</span></strong><span>”；【D】为程度，这里不强调程度，所以缺省。</span></p><blockquote><p><span>例4 通过实验，探究平面图形平移的规律，获得发现成功的愉快体验，领略数学方法的简洁美。</span></p></blockquote><p><span>其中，【A】为学生，缺省；【B】为行为动词：“</span><strong><span>探究</span></strong><span>”、“</span><strong><span>获得</span></strong><span>”、“</span><strong><span>领略</span></strong><span>”，其行为内容分别是：“</span><strong><span>平面图形平移的规律</span></strong><span>”、“</span><strong><span>发现成功的愉快体验</span></strong><span>”、“</span><strong><span>数学方法的简洁美</span></strong><span>”；【C】为条件：“</span><strong><span>通过实验</span></strong><span>”；【D】为程度，这里不强调程度，所以缺省。</span></p><hr /><h2><a name="二数学教学的原则" class="md-header-anchor"></a><span>二、数学教学的原则</span></h2><p><span>当我们为某一堂数学课进行教学设计时，我们要以某些准则为参考来选择教学模式，这就是数学教学原则。不同的教材对数学教学原则的阐述不尽相同，但究其实际意思往往差别不大，《数学教育概论》给出的数学教学原则是如下四条：</span></p><ul><li><span>学习数学化原则</span></li><li><span>适度形式化原则</span></li><li><span>问题驱动原则</span></li><li><span>渗透数学思想方法的原则</span></li></ul><h3><a name="21-学习数学化原则" class="md-header-anchor"></a><span>2.1 学习数学化原则</span></h3><p><span>学习数学化是弗赖登塔尔的观点，核心是：用数学的观点考察现实，用数学的方法解决问题。它要求教师：创设数学情境；揭示数学本质；向学生展示数学的现实本源。而且它与数学建模密切相关。由于我们已经在上一讲详细讨论过弗赖登塔尔的理论，我们这里不详细讨论。</span></p><h3><a name="22-适度形式化原则" class="md-header-anchor"></a><span>2.2 适度形式化原则</span></h3><p><span>适度形式化原则有两个方面：一、数学教学必须有形式化；二、这种形式化要适度。</span></p><h4><a name="221-数学的形式化" class="md-header-anchor"></a><span>2.2.1 数学的形式化</span></h4><p><span>数学的形式化，包括符号化、逻辑化和公理化。形式化，有助于表示数量关系和逻辑关系，有助于理论体系的严格化和系统化，有助于借鉴已有的数学知识，发展新的数学知识。</span></p><p><span>数学之所以需要逻辑化和公理化，是因为数学的各个分支都是：将数学对象和数学符号用逻辑方法写成数学语言，然后构建基本的数学公理，最后通过演绎推理推导出各种数学命题，从而形成的。关于逻辑化和公理化，我们在讲授数学观时，已经详细探究了。下面我们重点聊一下符号化。</span></p><p><span>数学的符号化，很大程度上体现在数学语言上。数学的概念、命题、计算、论证用一套专门的数学语言来描述和表达的。数学的思维活动是以数学语言为工具展开的。数学教学应该教会学生用数学语言来表达思想，例如</span></p><ul><li><span>用数学符号语言给应用题列方程</span></li><li><span>用函数的语言表达变量之间的关系</span></li><li><span>用代数语言刻画几何结构的性质</span></li><li><span>用几何语言刻画代数表达式的意义……</span></li></ul><p><span>那么数学教师应该如何训练学生的数学语言呢？可以从如下三个方面：</span></p><ul><li><span>提高对数学语言符号的阅读、理解和运用的能力，例如，极限的</span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.984ex" height="2.11ex" viewBox="0 -755.9 2576.4 908.7" role="img" focusable="false" style="vertical-align: -0.355ex;"><defs><path stroke-width="0" id="E2-MJMATHI-3B5" d="M190 -22Q124 -22 76 11T27 107Q27 174 97 232L107 239L99 248Q76 273 76 304Q76 364 144 408T290 452H302Q360 452 405 421Q428 405 428 392Q428 381 417 369T391 356Q382 356 371 365T338 383T283 392Q217 392 167 368T116 308Q116 289 133 272Q142 263 145 262T157 264Q188 278 238 278H243Q308 278 308 247Q308 206 223 206Q177 206 142 219L132 212Q68 169 68 112Q68 39 201 39Q253 39 286 49T328 72T345 94T362 105Q376 103 376 88Q376 79 365 62T334 26T275 -8T190 -22Z"></path><path stroke-width="0" id="E2-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path stroke-width="0" id="E2-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E2-MJMATHI-3B5" x="0" y="0"></use><use xlink:href="#E2-MJMAIN-2212" x="688" y="0"></use><use xlink:href="#E2-MJMATHI-4E" x="1688" y="0"></use></g></svg></span><script type="math/tex">\varepsilon-N</script><span>定义</span></li><li><span>提高将同一数学对象用不同数学语言表达的能力，例如，单位圆：几何、代数、复平面</span></li><li><span>提高将日常语言抽象和转化为数学语言的能力，例如，数学建模和概率统计中的图表</span></li></ul><h4><a name="222-数学教学中对形式化的适度把握" class="md-header-anchor"></a><span>2.2.2 数学教学中对形式化的适度把握</span></h4><p><span>但是，在数学教学中过度强调形式化是不现实的，也是不符合数学发展和数学学习的规律的，这是因为：</span></p><p><span>首先，数学知识的形成过程是逐步走向严格的。最先发生的是“合情推理”（波利亚语），即通过试验和观测，进行必要的归纳和类比，然后进一步进行联想和猜测。获得猜测以后，再进行严密的演绎推理。事实上，数学教材上严密的演绎推理很多是后来补上的，例如，数学分析的相关理论经历了由牛顿、莱布尼兹到魏尔斯特拉斯的近两百年时间才逐步完善。既然数学知识的形成过程本身是逐步走向严格的，那么，数学教学应该遵循“形成逻辑”并完善演绎推理，而不是直接按照“形式逻辑”讲授演绎推理。只有这样才能使学生获得“数学再发现”的体验。</span></p><p><span>其次，学生的认识也有一个从具体到抽象的过程，而“抽象”本身也是有层次的。这是学生的认知规律造成的，所以在数学教学中，不能盲目地过度要求形式化。美国“新数运动”失败的一大原因就是过度的形式演绎。</span></p><p><span>第三，很多学生没有必要掌握过分严谨的数学理论。例如，非数学专业的理工科大学生，不必掌握严密的数学推理。而对大多数学生而言，更重要的是数学的思想和方法。因此，我们的数学教育事实上需要多样化，也需要更强调思想方法。</span></p><p><span>总之，数学教学需要形式化，但是要适度，应该做到</span><strong><span>淡化形式，注重实质</span></strong><span>。</span></p><h3><a name="23-问题驱动原则" class="md-header-anchor"></a><span>2.3 问题驱动原则</span></h3><p><span>数学史上最早的数学专著就是各种数学问题集。从古至今，数学问题一直都是数学的核心，数学教材中的各种概念和原理，最初都是为了解决数学问题而提出的，当相关猜测被提出并证明之后，猜测就变成了定理。可以说，数学是通过“做问题”而做出来的，数学学习和教学最终也指向“解决问题”。我们可以考虑使用几个经典问题将数学教学内容串联起来，利用问题探究过程实现教学，同时也使学生体会数学是有用的，体会到数学问题的求解过程。</span></p><p><span>事实上，同学们在大学学的很多数学课程完全可以以问题驱动的原则组织起来。以空间解析几何为例。第一章，向量，共分十节。其中前五节就是围绕着“如何建立空间坐标系”这个问题展开的，串联起了向量的加法、数乘、线性表示、线性相关性，空间基底，最后建立了空间仿射坐标系，这实际上体现的是三维几何空间的线性结构。而后五节，实际上围绕着另一个问题展开，那就是：“如何使用向量以及坐标系计算度量”，这里的“度量”包括角度、长度、面积、体积等，其中角度、长度的计算就需要使用内积，而面积、体积的计算就需要使用外积，将内外积运算相结合，就出现了混合积和双重外积，总之后五节讨论的是三维几何空间的度量结构。</span></p><h3><a name="24-渗透数学思想方法的原则" class="md-header-anchor"></a><span>2.4 渗透数学思想方法的原则</span></h3><p><span>我们在数学教学中应该渗透数学思想方法。具体来说，应该将教材内容还原为“</span><strong><span>想法</span></strong><span>”，这样才能解决学生常常问到的：“这个题是怎么想到的？”而数学教师在这里所起的作用在于：</span><strong><span>善于提出问题、启发诱导</span></strong><span>，</span><strong><span>善于归纳猜想</span></strong><span>，</span><strong><span>善于化难为易</span></strong><span>。切记：</span><strong><span>数学知识只是桥梁，数学思想方法才是彼岸！</span></strong></p><p><span>中学数学中比较常见的数学思想方法有：公理化思想、数形结合的思想、函数的思想、方程的思想、分类讨论的思想、化归的思想、一般化和特殊化等。关于数学思想方法，我们将在下一讲详细讨论，请同学们课后阅读第四章第五节。</span></p><hr /><h2><a name="三数学教学的方法与模式" class="md-header-anchor"></a><span>三、数学教学的方法与模式</span></h2><p><span>数学教学并非无法可依，教学是有“法”的，只是不要把它们变成“定法”，与此相关的是关于教学方法的十二字箴言：</span></p><blockquote><p><span>教学有法，教无定法，教贵得法！</span></p></blockquote><p><span>下面我们就来讨论一下数学教学的方法与模式。我们主要讲授五种模式：</span></p><ul><li><span>讲授式教学模式</span></li><li><span>讨论式教学模式</span></li><li><span>学生活动式教学模式</span></li><li><span>探究式教学模式</span></li><li><span>发现式教学模式</span></li></ul><h3><a name="31-讲授式教学模式" class="md-header-anchor"></a><span>3.1 讲授式教学模式</span></h3><p><span>讲授式教学模式，俗称“</span><strong><span>讲授法</span></strong><span>”，也称</span><strong><span>讲解-传授模式</span></strong><span>或</span><strong><span>讲解-接受模式</span></strong><span>，它是我国自50年代以来，使用时间最久范围最广的教学模式。其中，讲解，即教师对</span><strong><span>数学知识</span></strong><span>的系统讲解；传授，即教师对</span><strong><span>数学技能</span></strong><span>的传授；接受，即学生的学习主要是</span><strong><span>接受式的学习</span></strong><span>。</span></p><p><span>讲授式教学模式的特点是：</span></p><ul><li><span>以教师为中心，强调教师的主导作用</span></li></ul><ul><li><span>注重知识传授的系统性</span></li></ul><ul><li><span>以教师的单方面活动为主</span></li></ul><ul><li><span>教学效率高、信息量大</span></li></ul><p><span>讲授式教学模式的五个环节：</span></p><ul><li><span>组织教学、引入新课、讲授新课、巩固练习、小结/布置作业</span></li></ul><p><span>近年，教学界对讲授式教学模式提出了一些争议。比较极端的是建构主义对讲授模式的批评。建构主义否定讲授式教学模式，认为讲授式会导致学生的机械学习。对此，我们有必要澄清一下：</span></p><ul><li><span>接受式学习≠机械学习；</span></li></ul><ul><li><span>有意义的学习可以分为两种：即，有意义的接受式学习和有意义的探究式学习</span></li></ul><ul><li><span>对于概念性强、综合性强或比较陌生的教学课题，讲授式教学是非常合适的</span></li></ul><ul><li><span>《百家讲坛》、《开讲啦》等优秀的电视节目事实上包含大量的讲授式教学</span></li></ul><p><span>我们推荐北京大学丘维声教授在超星讲坛上讲解《高等代数》的系列视频，他所使用的就是讲授法，讲解非常精彩。</span></p><p><span>当然，我们必须注意，讲授式教学模式如果处理不当容易走向灌输式教学。所以我们在使用讲授法时，应该注意：</span></p><ul><li><span>与学生的</span><strong><span>认知结构</span></strong><span>联系起来，避免灌输式教学</span></li><li><span>注重</span><strong><span>学情分析</span></strong><span>和</span><strong><span>教材分析</span></strong></li><li><span>穿插其他教学模式，</span><strong><span>避免单一使用</span></strong><span>讲授式</span></li><li><span>对</span><strong><span>低龄学生</span></strong><span>的教学，应该适当减少讲授式教学模式的使用</span></li></ul><h3><a name="32-讨论式教学模式" class="md-header-anchor"></a><span>3.2 讨论式教学模式</span></h3><p><span>讨论式教学模式时为解决“满堂灌”式的教学而提倡的，表现形式有：</span><strong><span>师生讨论</span></strong><span>和</span><strong><span>小组讨论</span></strong><span>等。它在人文类课程使用会多一些，在数学教学中可以作为辅助模式穿插于其他模式之中。</span></p><p><span>有人认为，将课堂交给学生去讨论，会让教师更轻松。其实不然。讨论是教学模式对教师的要求较高，这主要体现在：</span></p><ul><li><span>课前充分设计讨论问题和预案；</span></li></ul><ul><li><span>课堂上把控讨论的方向和节奏；</span></li></ul><ul><li><span>课后对课堂效果进行评估</span></li></ul><p><span>讨论式教学模式也面临着一些困境，这主要体现在：</span></p><ul><li><span>在师生讨论时，大部分学生作壁上观，真正参与讨论的学生总是某几个，导致总是讨论问题的几个同学自己也感觉很尴尬</span></li></ul><ul><li><span>学生的回答有时答非所问，有时带跑了主题，教师需要进行提醒和总结</span></li></ul><ul><li><span>小组讨论时，教师难以把握课堂秩序和讨论话题</span></li></ul><ul><li><span>实施讨论式教学时，教师难以评估教学效果</span></li></ul><p><span>如何在具体实施教学中克服这些困境？一是需要教师的课前充分准备，二是需要教师的临场应对，三是需要教师对授课班级的学习风格的了解，某些情况下，不适宜使用过多的讨论。</span></p><h3><a name="33-学生活动式教学模式" class="md-header-anchor"></a><span>3.3 学生活动式教学模式</span></h3><p><span>数学活动的开展是目前课程标准的要求，有助于提高学生参与的积极性，具体形式有：实验、游戏、参观、看视频、利用数学软件进行动态演示。在具体实施时，可以根据实际情况，既开展课上活动，也开展一些课下的活动。建议同学们阅读课本第四章第六节。</span></p><p><span>活动式教学也可能出现一些问题，具体体现如下：</span></p><ul><li><span>花费时间多，教学效率低</span></li><li><span>难以评估教学效果</span></li><li><span>学生过多关注于教学活动的外在形式，而忽略了内在的数学实质，导致“</span><strong><span>有活动没数学</span></strong></li></ul><p><span>针对第一个问题，我们可以考虑将某些教学活动放在课下进行，例如在讲解概率的概念的时候，我们可以设计抛硬币和抛骰子等活动，让学生们在活动中统计相关频率。但是这个活动不适合在课堂上展开，因为会占用过多的课堂时间。可以考虑让学生们课下进行，在课上汇报试验结果。</span></p><p><span>关于第二个问题，我们需要在活动中设置一系列的提问，检测效果。</span></p><p><span>关于第三个问题，数学教学活动需要教师充分地准备和引导，教师应该在课堂是充分发挥引导者的作用。</span></p><h3><a name="34-探究式教学模式" class="md-header-anchor"></a><span>3.4 探究式教学模式</span></h3><p><span>探究式教学模式，也称“</span><strong><span>引导-发现</span></strong><span>”模式。如果结合</span><strong><span>问题驱动原则</span></strong><span>使用，将非常有助于数学教学的开展。它的具体实施步骤是：</span></p><ul><li><span>教师精心设计问题链</span></li></ul><ul><li><span>学生基于对问题的分析，提出假设</span></li></ul><ul><li><span>在教师的引导下，学生对问题进行论证，形成确切的概念</span></li></ul><ul><li><span>学生通过实例来证明或辨认所获得的概念</span></li></ul><ul><li><span>教师引导学生分析思维过程，形成新的认知结构</span></li></ul><p><span>探究式教学模式的有时在于：</span></p><ul><li><span>让学生体验了数学再发现的思维过程</span></li><li><span>培养了学生的创新能力</span></li><li><span>有助于避免学生“死板学数学”的现象</span></li></ul><p><span>案例：探索北京到纽约的飞机航线距离，使得航程尽可能小。</span></p><p><span>在这个案例中，学生可能直观上以为飞机从北京起飞后要飞越太平洋到达美国纽约。这是直观生活经验带来的误解。教师可以借此引导学生学习球面大圆所给出的球面距离，详见</span><mark><span>高中数学选修3.3，第二讲第一节，球面上的距离</span></mark><span>。</span></p><h3><a name="35-发现式教学模式" class="md-header-anchor"></a><span>3.5 发现式教学模式</span></h3><p><span>请同学们阅读教材105页和106页的相关内容，思考：发现式教学与探究式教学的区别是什么？</span></p><p><span>请注意：探究式教学模式中的问题是由教师精心设计的问题链；而在发现式教学模式中，则是通过学生的阅读、观察、实验等由学生自己去发现问题、研究问题和解决问题。更具体地说，发现式教学与探究式教学的区别体现在：</span></p><ol><li><span>更倾向于学生的发现；</span></li></ol><ol start='2' ><li><span>更适合于具有很高思维价值的课程中；</span></li></ol><ol start='3' ><li><span>适合在基础较好、思维水平较高的班级使用</span></li></ol><p><span>如果授课班级基础较差、思维水平不高，不应该使用发现式教学模式</span></p><hr /><h3><a name="36-好的数学教学模式和方法的特性" class="md-header-anchor"></a><span>3.6 好的数学教学模式和方法的特性</span></h3><p><span>我们讨论了这么多教学模式，那么什么才是好的教学模式呢？</span></p><p><span>好的数学教学方案不应该是单一模式的，而应该具有</span><strong><span>综合性</span></strong><span>；好的数学教学应该具有</span><strong><span>探究性</span></strong><span>，即使只是讲授式教学，也应该避免“满堂灌”；好的数学教学模式应该</span><strong><span>兼顾教学效率和学生的参与性</span></strong><span>；好的数学教学模式应该</span><strong><span>顾及学生的情感态度和动机</span></strong><span>。</span></p><hr /></div>
+</body>
+</html>
